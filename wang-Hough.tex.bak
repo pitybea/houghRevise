@@ -1,0 +1,478 @@
+
+%% bare_conf.tex
+%% V1.3
+%% 2007/01/11
+%% by Michael Shell
+%% See:
+%% http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.7 or later) with an IEEE conference paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE!
+%% User assumes all risk.
+%% In no event shall IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%
+%% File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
+%%                    bare_conf.tex, bare_jrnl.tex, bare_jrnl_compsoc.tex
+%%*************************************************************************
+
+% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. IEEE's font choices can trigger bugs that do  ***
+% *** not appear when using other class files.                            ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
+
+
+
+% Note that the a4paper option is mainly intended so that authors in
+% countries using A4 can easily print to A4 and see how their papers will
+% look in print - the typesetting of the document will not typically be
+% affected with changes in paper size (but the bottom and side margins will).
+% Use the testflow package mentioned above to verify correct handling of
+% both paper sizes by the user's LaTeX system.
+%
+% Also note that the "draftcls" or "draftclsnofoot", not "draft", option
+% should be used if it is desired that the figures are to be displayed in
+% draft mode.
+%
+\documentclass[conference,superscriptaddress]{IEEEtran}
+
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfigure}
+\usepackage{color}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{authblk}
+
+
+
+
+
+\ifCLASSINFOpdf
+  % \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Object Detection by\\ Common Fate Hough Transform}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author[1]{Zhipeng Wang}
+\author[2]{Jinshi Cui}
+\author[2]{Hongbin Zha}
+\author[1]{Masataka Kegesawa}
+\author[1]{Katsushi Ikeuchi}
+
+\affil[1]{Institute of Industrial Science, The University of Tokyo, Japan \authorcr
+Email: \{wangzp,kagesawa,ki\}@cvl.iis.u-tokyo.ac.jp}
+
+\affil[2]{Key Lab of Machine Perception (Ministry of Education), Peking University, China \authorcr
+Email: \{cjs,zha\}@cis.pku.edu.cn}
+
+
+
+
+% conference papers do not typically use \thanks and this command
+% is locked out in conference mode. If really needed, such as for
+% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
+% after \documentclass
+
+% for over three affiliations, or if they all won't fit within the width
+% of the page, use this alternative format:
+%
+%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
+%Homer Simpson\IEEEauthorrefmark{2},
+%James Kirk\IEEEauthorrefmark{3},
+%Montgomery Scott\IEEEauthorrefmark{3} and
+%Eldon Tyrell\IEEEauthorrefmark{4}}
+%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
+%Georgia Institute of Technology,
+%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
+%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
+%Telephone: (800) 555--1212, Fax: (888) 555--1212}
+%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
+
+
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+
+
+
+% make the title area
+\maketitle
+
+
+\begin{abstract}
+%\boldmath
+Two challenging issues for object detection are how to separate near objects and how to separate similar different-class objects. Learned that during human's vision perception, tokens moving or functioning in a similar manner are perceived as one unit, stated by the common fate principle, we propose a method to detect objects of multiple classes. Our method extends the Implicit Shape Model (ISM) to incorporate motion grouping results of object parts, and meets the challenges. Keypoint-based object parts are firstly detected and then grouped by the similarities of their corresponding trajectories which are traced by keypoint tracking. The grouping results are combined into a Hough transform framework. In Hough transform based methods, each object part votes for object centers and labels according to a trained codebook. In our method, the votes are assigned different weights according to the motion grouping results. One vote is assigned larger weight if it has larger consistence with the votes of other object parts in the same motion group. In such a manner, peaks in the formed Hough images which correspond to object hypotheses become easier to find. And our method gains improvement in both object position and label estimation. Experiments are provided to show the merit in terms of detection accuracy.
+
+
+
+
+
+
+\end{abstract}
+
+
+
+
+\section{Introduction}
+% no \IEEEPARstart
+% You must have at least 2 lines in the paragraph with the drop letter
+% (should never be an issue)
+
+Most state-of-the-art detection methods are based on the sliding-window schema~\cite{ac4,ac1} or the Hough transform~\cite{ac2,ac3,ac18}.
+The sliding-window methods consider all sub-images by using classifiers to decide whether an object exists or not.
+The Hough transform based methods, represented by the ISM~\cite{lb1}, start by detection of object parts, and object hypotheses are given by summing up all the votes voted by the object parts.
+
+Methods based on the generalized Hough transform~\cite{ac17} is favorable for object detection for its robustness to partial deformation and its easiness of training. Object part in the form of keypoint descriptors~\cite{lb1}, image patches~\cite{ac6,ac7}, or image regions~\cite{ac8} votes for hypotheses that generate itself. The votes from different voting elements are added up to form a Hough image. The peaks of the Hough image are considered as detection hypotheses with the height of each peak as the confidence of the corresponding hypothesis. For training, an appearance codebook of object parts is built from a set of images on each of which the object center and label are annotated. Each code encodes the appearance, the class label, and the offset to the object center of an object part. The class label and offset act as a Hough vote at run time, when object parts from the current image are matched against the codebook.
+
+
+\begin{figure}
+\centering
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 600 480]{PEssR.jpg}
+\label{fig:compa:a}}
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 720 576]{a56.jpg}
+\label{fig:compa:b}}
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 720 576]{voteimg00056.jpg}
+\label{fig:compa:c}}
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 720 576]{selectedvotesimg00056.jpg}
+\label{fig:compa:d}}
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 600 480]{Untitled-6.jpg}
+\label{fig:compa:e}}
+\subfigure[]{
+\includegraphics[width=0.22\textwidth,bb=0 0 600 480]{Untitled-4.jpg}
+\label{fig:compa:f}
+}
+\caption{Effect of the proposed assignment for vote weights. The motion grouping results are given in (b), and different motion groups are marked with different colors. The object centers voted according to the 7 best matched codes are given in (c). Red circles are centers for pedestrians while blue ones are centers for bicycle riders. The object centers in (d) are voted by votes with the proposed weights higher than a threshold. Grids in (e) and (f) correspond to the grids on the image coordinate in (a). Hough image of (e) is formed by votes with uniform weights, and Hough image in (f) is formed with the proposed weights.}
+\label{fig:compa}
+\end{figure}
+
+For object detection methods, it is challenging to sperate near objects and similar different-class objects. As for Hough transform based methods: (1) votes casted by object parts from near objects make the peaks corresponding to different objects mixed up, and (2) votes casted by similar different-class object parts lead to tough decisions on the class label of the peaks. See Fig. \ref{fig:compa:e}. Besides, challenges also come from the pollution of training example's background to the codebook. During training, a clean codebook can be built with foreground object marked, which needs manual efforts. Otherwise, for the effectiveness of the codebook, large amount of training examples are needed, which harms efficiency.
+
+To meet the challenges, we propose an object detection method based on the common fate principle~\cite{ac13}. The principle is one of the four visual perception principles as theorized by gestalt psychologists. For humans, tokens moving coherently are perceptually grouped, and this provides an intuition to group the object parts (keypoint descriptors) that will vote by their motion patterns. The motion of each object part is represented by a trajectory generated by tracking it through frames. The object parts are then grouped using the pairwise similarities of their corresponding trajectories. Among the votes of each object part, those which are more {\lq\lq}agreeable{\rq\rq} by the votes of the other object parts in the same motion group are assigned higher weights. This results in that effective votes are more likely to be assigned higher weights as shown in Fig. \ref{fig:compa:d}. These votes with different weights make the peaks in the formed Hough image easier to find as shown in Fig. \ref{fig:compa:f}.
+
+By novelly combining motion analysis results with the Hough transform framework by assigning different weights to each object part's votes, the proposed method has several appealing properties:
+\begin{itemize}
+\item {The method is able to estimate object position and label of multiple objects of multiple classes. The existence of three types of objects makes the task challenging: near objects, similar different-class objects, and multi-pose same-class objects.}
+\item {Its ability to use a codebook trained by images with a cluttered background.}
+\item {The manner in which the grouping results by motion is integrated into the Hough transform is very general, and it can be used for incorporating other grouping results.}
+\end{itemize}
+
+The paper is organized as follows. Section II reviews related work. Section III gives formalism of the common fate Hough transform. Section IV describes inference on the formed Hough images. Section V gives experimental results, and section VI concludes.
+
+\section{Related Work}
+
+Our work is most related to object detection methods using the Hough transform~\cite{ac9,ac22,lb1,ac5,ac10,ac21}. The ISM~\cite{lb1,ac5} is extended  by notifying correspondences between the object parts and the hypotheses~\cite{ac9} for the detection of multiple near objects. While in~\cite{ac10} the Hough transform is placed in a discriminative framework for object detection in a way that the codes are assigned different weights by the co-occurrence frequency of their appearance and offset to the object center.
+
+Two recent Hough transform methods consider the grouping of object parts ~\cite{ac26,ac25}. The method in~\cite{ac26} deals with scale change. Instead of estimating the scale by local features trained from different scaled examples, the votes are considered as voting lines. By considering the difference of the voted centers, local features are firstly grouped and then vote more consistently for the object center. In ~\cite{ac25}, the grouping of object parts, the correspondence between object parts and object, and the decisions on detection hypotheses are optimized in the same energy function. For this method, the problem is that the grouping results are meaningless.
+
+The work is also related to object detection methods by trajectories~\cite{my9,ac24}, methods weighting features~\cite{ij13}, methods dealing with codebook noise~\cite{ac19}, and methods which integrate temporal information~\cite{ac23}.
+
+\section{Common Fate Hough Transform}
+As pointed in~\cite{ac27}, the probabilistic standpoint of the ISM is unsatisfactory, especially describing weights of the votes as priors does not make sense. Here we consider Hough transform as transforming from detected object parts, $\{\bf{e}\}$, to a confidence space of object hypotheses, $C({\bf{x}},l)$. And $\bf{x}$ is the coordinate of the object center, while $l$ the label. Terms described as priors of the votes in the ISM are actually weights, and likelihood term of the votes are actually blurring functions to convert discrete votes into continuous space. Then this section describes how a Hough image for estimation of object centers and labels is formed from object parts observed on an image.
+
+Let $\bf{e}$ denote an object part observed on the image. The appearance of $\bf{e}$ is matched against the codebook, and $\bf{e}$ activates $N$ best matched codes from the trained codebook. Each code contains the appearance, its offset to the object center, and the class label. According to the $N$ matched codes, $\bf{e}$ casts $N$ votes. Each vote $V_{\bf{e}}$ is about the object center that generates $\bf{e}$. The position of the object center casted by $V$ is denoted by ${\bf{x}}_V$, while the class label by $l_V$. Based on the $N$ votes of $\bf{e}$, the confidence that a position $\tilde{\bf{x}}$ is the center of an object with class label $\tilde{l}$ is given by,
+
+\begin{equation}C({\tilde{\bf{x}}},\tilde{l};{\bf{e}}) = \sum\limits^N_{i=1} {B({\tilde{\bf{x}}},{\tilde{l}};{V_{\bf{e}}^i}) w({V_{\bf{e}}^i})}\:.
+\label{eq1}
+\end{equation}
+Here $B({\tilde{\bf{x}}},{\tilde{l}};{V_{\bf{e}}^i})$ is the blurring function. And $w({V_{\bf{e}}^i})$ is the weight of ${V_{\bf{e}}^i}$.
+
+The idea of the proposed method is that, the weight term, $w({V_{\bf{e}}^i})$, is defined by the motion grouping results of all the object parts.
+
+The blurring function is defined as,
+
+\begin{equation}
+B(\tilde{\bf{x}},\tilde l;V)
+= \left\{ \begin{array}{*{20}{c}}
+   0   &\mbox{  if } {l_V} \ne \tilde{l} \mbox{ or } |\tilde{\bf{x}} - {\bf{x}}_V| > d   \\
+   G(\tilde{\bf{x}};{{\bf{x}}_V},\sigma) &\mbox{otherwise}
+\end{array} \right. \:.
+\label{eq2}
+\end{equation}
+Here $G(\tilde{\bf{x}};{\bf{x}}_V,\sigma )$ is a Gaussian function that fixes the spacial gap between $\tilde{\bf{x}}$ and ${\bf{x}_V}$.
+
+Let $M$ be the total number of object parts on the image, then by summing up over all the object parts, the confidence of $\tilde{\bf{x}}$ being the center of a $\tilde{l}$-class object is given by,
+
+\begin{equation}
+\begin{aligned}
+C({\tilde{\bf{x}}},\tilde{l}) &=\sum\limits^M_{j=1} C({\tilde{\bf{x}}},\tilde{l};{\bf{e}}_j)w({\bf{e}}_j) \\
+&{
+\begin{aligned}
+=\sum\limits^M_{j=1} \sum\limits^N_{i=1} {B({\tilde{\bf{x}}},{\tilde{l}};{V_{{\bf{e}}_j}^i}) w({V_{\bf{e}}^i})w({\bf{e}}_j)} \:.
+\end{aligned}
+}
+\end{aligned}
+\label{eq3}
+\end{equation}
+
+Here, a uniform weight is assumed for each object part, and $w({\bf{e}}_j)=\frac 1 M$. Then by considering $C({\tilde{\bf{x}}},\tilde{l})$ as the evaluation score of the Hough space $({\tilde{\bf{x}}},\tilde{l})$, the task of estimating object centers and labels converts to finding and then validating the local maxima of the Hough image.
+
+To meet the challenges of separating near objects, separating similar different-class objects, and using a noisy codebook,  different weights are assigned to the votes of each object part by considering the motion grouping results of the object parts.
+
+Let $\gamma=\{\bf{g}\}$ denote the grouping results, where $\bf{g}$ is a group of object parts, i.e., ${{\bf{e}}_m}\in \bf{g}$ and ${{\bf{e}}_n}\in \bf{g}$. Those votes of ${\bf{e}_m}$ which are more {\lq\lq}agreeable{\rq\rq} by the votes of the other objects in $\bf{g}$ are assigned larger weights.
+
+Towards this end, the relationship between the votes of $\bf{e}_m$ and the votes of $\bf{e}_n$ needs to be given in advance. This relationship is named support. The support from ${V_{{{\bf{e}}_n}}}$ to ${V_{{{\bf{e}}_m}}}$ is defined by that based on ${V_{{{\bf{e}}_n}}}$, the confidence ${V_{{{\bf{e}}_m}}}$'s voted center is correct, as,
+
+
+\[
+S({V_{{{\bf{e}}_n}}} \to {V_{{{\bf{e}}_m}}})  =  B({\bf{x}}_{V_{{{\bf{e}}_m}}},l_{V_{{{\bf{e}}_m}}};{V_{{{\bf{e}}_n}}})\:,n \ne m\:.
+\]
+Here $B({\bf{x}}_{V_{{{\bf{e}}_m}}},l_{V_{{{\bf{e}}_m}}};{V_{{{\bf{e}}_n}}})$ is defined in (\ref{eq2}). This measures the coherence of the two votes from different object parts.
+
+Then, the support from ${{\bf{e}}_n}$ to ${V_{{{\bf{e}}_m}}}$ is defined by that based on ${{\bf{e}}_n}$, the confidence that $V_{{{\bf{e}}_m}}$'s voted center is correct, as,
+
+\[
+\begin{aligned}
+S({{{\bf{e}}_n} \to {V_{{{\bf{e}}_m}}}}) &= C({\bf{x}}_{V_{{{\bf{e}}_m}}},l_{V_{{{\bf{e}}_m}}};{{{\bf{e}}_n}})\\
+& {
+=\sum\limits^N_{i=1} {S({{V^i_{{{\bf{e}}_n}}} \to {V_{{{\bf{e}}_m}}}})w(V^i_{{\bf{e}}_n})}\:,n \ne m\:.
+}
+\end{aligned}
+\]
+
+And the support from ${\bf{g}}$ to $V_{{\bf{e}}_m}$ is defined by the confidence that $V_{{\bf{e}}_m}$'s voted center is correct based on the votes of all the other object parts but its belonging object part in $\bf{g}$, as,
+\[
+\begin{aligned}
+S({\bf{g}} \to V_{{\bf{e}}_m})
+&= \sum\limits_{{{\bf{e}}_i} \in {\bf{g}}- \{ {{\bf{e}}_m} \} }{C({\bf{x}}_{V_{{{\bf{e}}_i}}},l_{V_{{{\bf{e}}_m}}};{{{\bf{e}}_i}})w({{\bf{e}}_i})}\\
+& =\frac 1 M  \sum\limits_{{{\bf{e}}_i} \in {\bf{g}}- \{ {{\bf{e}}_m} \}} {S({{{\bf{e}}_i} \to {V_{{{\bf{e}}_m}}}})} \:.
+\end{aligned}
+\]
+
+By assuming all object parts in the same motion group are from the same object, which means motion grouping gives good results. The center position and the class label given by one vote shall be consistent with that given by the motion group.
+Thus for a particular vote of ${\bf{e}}_m$, i.e., ${\tilde{V}}_{{\bf{e}}_m}$, a weight is assigned to it by considering its consistence with $\bf{g}$ and the consistence of ${\bf{e}}_m$'s other votes  with $\bf{g}$, as:
+\begin{equation}
+\begin{aligned}
+{\color{blue}w(}&{\color{blue}{\tilde{V}}_{{\bf{e}}_m})}
+= \frac
+{S({\bf{g}} \to {{\tilde{V}}_{{\bf{e}}_m}}) + \frac{\Delta } N}
+{\sum\limits^N_{i=1}{ S({\bf{g}} \to {V^i_{{{\bf{e}}_m}}})} + \Delta }\\
+&
+\begin{aligned}
+= \frac
+{ \sum\limits_{{{\bf{e}}_j} \in {\bf{g}}- \{ {{\bf{e}}_m} \}} {
+\sum\limits^N_{k=1} {S({{V^k_{{{\bf{e}}_j}}} \to {{\tilde{V}}_{{{\bf{e}}_m}}}})\color{blue}{w(V^k_{{\bf{e}}_j})}}
+}  + \frac{M\Delta } N}
+{\sum\limits^N_{i=1}{
+\sum\limits_{{{\bf{e}}_j} \in {\bf{g}}- \{ {{\bf{e}}_m} \}} {
+\sum\limits^N_{k=1} {S({{V^k_{{{\bf{e}}_j}}} \to {V^i_{{{\bf{e}}_m}}}})\color{blue}{w(V^k_{{\bf{e}}_j})}}
+}
+} + M\Delta }\:.
+\end{aligned}
+\end{aligned}
+\label{eq4}
+\end{equation}
+Here, $\Delta$ is a small constant for preventing zeros. Notice, $w({\tilde{V}}_{{\bf{e}}_m})$ is defined using $w(V^k_{{\bf{e}}_j})$, the weights of the votes of the other object parts in ${\bf{g}}$. In order to give $w({\tilde{V}}_{{\bf{e}}_m})$, uniform weights are firstly assigned to the votes of each object part in ${\bf{g}}$, i.e., $w(V^k_{{\bf{e}}_j})=\frac{1}{N}$. Then new weights are calculated based on the uniformly assigned weights. The weights of votes to form the Hough image are weights converged in iterations.
+
+In such a manner, the motion grouping results are integrated into the Hough transform, and this method is named the common fate Hough transform.
+
+\subsection{Motion Grouping}
+In order to group the object parts by their motion patterns. The object parts are tracked through frames before and after the current frame to generate trajectories. The object parts in this method are in the form of keypoint descriptors. The Harris Corner~\cite{harris} feature is chosen to represent the object part, while for appearance, the region covariance~\cite{regionc} of the image patch around the keypoint is used.
+
+For each object part, a trajectory is generated by tracking its corresponding Harris Corner by the KLT tracker~\cite{ij2}. To group the trajectories, pairwise similarities are firstly defined. Let $T_{{\bf{e}}_m}$ and $T_{{\bf{e}}_n}$ denote two trajectories corresponding to ${{\bf{e}}_m}$ and ${{\bf{e}}_n}$. The first similarity between two trajectories is defined as,
+\[
+{D_1}(T_{{\bf{e}}_m},T_{{\bf{e}}_n}) = \mathop {\max }\limits_{i=1...L} (Euclid({\bf{x}}^i_{T_{{\bf{e}}_m}},{\bf{x}}^i_{T_{{\bf{e}}_n}}))\:.
+\]
+Here, $Euclid(\cdot)$ calculates the Euclidean distance, $i$ is the frame index, and $L$ is the length of the overlapping part of the two trajectories.
+To define the second similarity, the $i$th directional vector of $T$ is firstly defined as, ${\bf{d}}^i_T={\bf{x}}^{i+3}_{T}-{\bf{x}}^i_{T}$. Let ${\bf{a}}_i={\bf{d}}^i_{T_{{\bf{e}}_m}}$, ${\bf{b}}_i={\bf{d}}^i_{T_{{\bf{e}}_n}}$, $a_i=\frac{{{{\bf{a}}_i}\cdot{{\bf{b}}_i}}}{{{{\bf{a}}_i}\cdot{{\bf{a}}_i}}}$, and $b_i=\frac{{{{\bf{a}}_i}\cdot{{\bf{b}}_i}}}{{{{\bf{b}}_i}\cdot{{\bf{b}}_i}}}$. Then the second similarity is defined as,
+\[
+{D_2}(T_{{\bf{e}}_m},T_{{\bf{e}}_n})= \mathop {\max }\limits_{i=1...L-3} (\max (|{{\bf{a}}_i} - a_i {{\bf{a}}_i}|,|{{\bf{b}}_i} - b_i{{\bf{b}}_i}|))\:.
+\]
+
+Before grouping the trajectories, the static points are excluded. Inspired by \cite{my9}, a minimal spanning tree of the trajectories is built upon $D_1$, and split by cutting edges larger then a threshold, $D^1_{th}$. For each element of the splitting results, a minimal spanning tree is built upon $D_2$ and split by cutting the edges larger than a threshold, $D^2_{th}$. This hierarchical procedure ensures that trajectories in the same group have both small $D_1$ and $D_2$. Each trajectory corresponds to an object part, and the grouping results of the trajectories correspond to grouping results of the object parts.
+\subsection{Codebook}
+For training, Harris corners are extracted from the training images with the object center and the class label annotated. In this method, region covariance is chosen to represent the appearance, which is defined as,
+\[{\bf{r}} = \frac{1}{{K - 1}}\sum\limits_{i = 1}^K {({{\bf{z}}_i} - {\bf{\mu }}){{({{\bf{z}}_i} - {\bf{\mu }})}^T}} \;.\]
+Here, $K$ is the number of pixels in the region, and ${{\bf{z}}_i}$ is a $7$-dimensional vector regarding the $(x,y)$ coordinate of the pixel, while ${\bf{\mu }}$ is the mean of ${{\bf{z}}_i}$.   And ${{\bf{z}}}(x,y)$ contains the RGB color of the pixel and the intensity gradients of the pixel, as: $r(x,y)$, $g(x,y)$, $b(x,y)$, $|\frac {\partial I(x,y)} {\partial x}|$, $|\frac{\partial I(x,y)}{\partial y}|$, $|\frac{{\partial ^2}I(x,y)}{\partial {x^2}}|$, and $|\frac{{\partial ^2}I(x,y)}{\partial {y^2}}|$.
+
+The appearance similarity between ${\bf{r}}_m$ and ${\bf{r}}_n$ is given by,
+\[
+\rho ({\bf{r}}_m,{\bf{r}}_n) = \sqrt {\sum\limits_{i = 1}^7 {{{\ln }^2}{\lambda _i}} }\;.
+\]
+Here, $\lambda _i$ is the generalized eigenvalue by solving the generalized eigenvalue problem, ${\lambda _i}{\bf{r}}_m{{\bf{u}}_i} = {\bf{r}}_n {{\bf{u}}_i},{{\bf{u}}_i} \ne {\bf{0}}$, with ${\bf{u}}_i$ the eigenvector.
+
+A square image patch around each keypoint is used to represent the appearance of an object part.
+\section{Detection}
+After forming the Hough image, the detection hypotheses are validated. Let ${\bf{h}}=\{ H \}$ be the points in the Hough space which are evaluated by $C({\bf{x}}_{H},l_{H})$ and have $C({\bf{x}}_{H},l_{H})>0$.  Inspired by~\cite{ac9}, the hypotheses are validated by an optimizing procedure. Let $O$ be the number of the points in ${\bf{h}}$. let $u_i=1\mbox{ or } 0$ indicate $H_i$ being a true object center or not. The problem is:
+\[
+\arg \max\limits_{u_i} \prod\limits_{i = 1}^O { C^{u_i}({H_i})} \Longleftrightarrow\arg \max\limits_{u_i} \sum\limits_{i = 1}^O {{u_i}\ln (C({H_i})} )\:.
+\]
+Let $v_{ij}=1\mbox{ or } 0$ indicate $e_j$ belongs to $H_i$ or not, then
+\[
+\begin{aligned}
+C(H_i)&=\sum\limits^M_{j=1} C({\bf{x}}_{H_i},l_{H_i};{\bf{e}}_j)w({\bf{e}}_j)\\
+&=\frac 1 M \sum\limits^M_{j=1} v_{ij} C({\bf{x}}_{H_i},l_{H_i};{\bf{e}}_j)\:,
+\end{aligned}
+\]
+and by assuming one object part belongs to and only belongs to one hypothesis, the problem is,
+\[
+\begin{aligned}
+&\arg \max\limits_{u_i,v_{ij}} \sum\limits_{i = 1}^O {{u_i}\ln (\sum\limits^M_{j=1} v_{ij} C({\bf{x}}_{H_i},l_{H_i};{\bf{e}}_j)} )\\
+&
+\begin{aligned}
+    s.t.:\mbox{ }&u_i=0\mbox{ or }u_i=1,\forall\;i;\\
+    &v_{ij}=0\mbox{ or }v_{ij}=1,\forall\;i,\forall\;j;\\
+    &\sum\limits_{i = 1}^O {v_{ij}}=1,\forall\;j;\;\;  \sum\limits_{j = 1}^M {v_{ij}}\leq u_i,\forall\;i\:.
+\end{aligned}
+\end{aligned}
+\]
+
+
+Following~\cite{ac9}, the optimal result for the problem is inferred by greedy maximization. The largest local maximum of all the local maxima is chosen to be the center of a true object and then the object parts belonging to the chosen object center are excluded from the object part set. A new Hough image where new objects are found is formed using the remaining object parts. This procedure ends when the object part set is empty or the confidence of the chosen object is lower than a threshold.
+\section{Experimental Results}
+In experiments, improvement of the method is verified in terms of detection accuracy. The method is tested on the \emph{P-campus} dataset with~\cite{ac9} as benchmark.
+
+\textbf{Dataset} The \emph{P-campus} dataset contains two primary classes of foreground objects: pedestrians and bicycle riders. The frame size is 720$\times$576. Among all the 401 continuous frames, 633 different-class ground truth bounding boxes are annotated on 79 frames. In this dataset, pedestrians and bicycle riders have in common the upper human body, and pedestrians appear in front, back, and side views.
+
+\textbf{Implementation Settings} For training, 52 images of bicycle riders and 171 images of pedestrians are randomly selected. Harris corners are generated on the image. For appearance¡¡ region covariances are generated for each keypoint using the surrounding 9$\times$9 image patch. The appearance, the offset to the image (object) center, and the label of the training image are encoded, and the codes are inserted into a codebook. The final codebook contains 5502 codes.
+For motion grouping, each keypoint is tracked through 10 frames before and through 10 frames after the current frame. The similarity of two 21-point trajectories is defined using only the overlapping part. To set the two thresholds for motion grouping, $D_1$ and $D_2$ are  measured for keypoint pairs of different objects. $D^1_{th}$ is set that it is larger than only 10\% of the measured $D_1$s, and so is $D^2_{th}$. By doing so, keypoints belonging to different objects are not likely to be grouped together.
+To form the Hough image, 35 best matched codes are chosen from the codebook for each object part. In (\ref{eq3}), $d$ and $\sigma$ need to be given. The precision-recall curves are based on $\sigma$, while $d$ is set to be 10. Here $\sigma$ is the most important parameter.
+
+\textbf{Comparisons} For comparison, detection is done on the Hough images formed with and without motion grouping results. The same codebook and the same parameter settings are used for forming and searching over both Hough images. The votes of each object part are assigned uniform weights in the benchmark method, while weights defined in (\ref{eq4}) are assigned in the proposed method.
+\begin{figure}
+\centering
+\subfigure[]{
+\includegraphics[width=0.23\textwidth,bb=0 0 480 425]{prf.eps}
+\label{fig:pr:a}}
+\subfigure[]{
+\begin{minipage}[b]{0.22\textwidth}
+\includegraphics[width=\textwidth,bb=0 0 230 115]{cm2.eps}\\
+\includegraphics[width=\textwidth,bb=0 0 230 115]{cm1.eps}
+\end{minipage}
+\label{fig:pr:b}}
+\caption{Precision-recall curves (red: the proposed method, blue: the benchmark method) and confusion matrices (upper: the proposed method, down: the benchmark method). In (b), pedestrian and bicycle miss detections are considered as wrongly labeled to be none. Pedestrian or bicycle false alarms are considered as belonging to the none class while wrongly labeled as pedestrians or bicycles.}
+\label{fig:pr}
+\end{figure}
+
+The precision-recall curves are shown in Fig. \ref{fig:pr:a}. An object is considered as correctly detected only if the distance from the ground truth to it is less than 10 pixels. In Fig. \ref{fig:pr:a}, the correctly positioned but wrongly labeled objects are considered as true positives, aiming at verifying the positioning ability of the proposed method.
+
+The confusion matrices are given in Fig. \ref{fig:pr:b}. For clarity of the comparisons, the proposed method is compared with the benchmark method when they have nearly equal number of false alarms. To evaluate the labeling ability, a class of {\lq\lq}none{\rq\rq} to represent missed detections and false alarms is manually added. For example, in Fig. \ref{fig:pr:b}, 487 pedestrian instances are correctly positioned and labeled by the proposed method, 2 are wrongly labeled to be bicycle riders, and 21 are miss-detected.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.23\textwidth,bb=0 0 720 576]{016.jpg}
+\includegraphics[width=0.23\textwidth,bb=0 0 720 576]{071.jpg}\\
+
+\includegraphics[width=0.23\textwidth,bb=0 0 720 576]{326.jpg}
+\includegraphics[width=0.23\textwidth,bb=0 0 720 576]{366.jpg}
+\caption{Results. Red rectangles and blue rectangles mark correctly detected pedestrians and bicycle riders. Black rectangles mark static objects, which are beyond the verification for the method.}
+\label{fig:result}
+\end{figure}
+\section{Conclusion}
+We propose a method for concurrent object center and label estimation by extending the ISM with motion. The underlying assumption is that object parts moving coherently are likely to belong to the same object. Before voting, all the object parts are grouped by their motion patterns. The votes of each object part are assigned different weights according to the motion grouping results. In this manner, the proposed method makes it easy to find peaks on the Hough images. Experiments show the merit of the method in terms of detection accuracy.
+
+
+
+% conference papers do not normally have an appendix
+
+
+% use section* for acknowledgement
+\section*{Acknowledgment}
+Significant part of the work is done during the first author's master course at Peking University. The first author is sponsored by China Scholarship Council. The authors thank Bo Zheng, Boxin Shi, and Nicole Hajicek for suggestions.
+
+
+
+
+
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+{\small
+\bibliographystyle{ieee}
+\bibliography{egbib}
+}
+
+
+
+
+\end{document}
+
+
