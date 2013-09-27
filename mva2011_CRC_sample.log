@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.6.12)  5 MAY 2013 23:37
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.6.16)  27 SEP 2013 20:30
 entering extended mode
 **mva2011_CRC_sample.tex
-(G:\tem\latex\latex\mva2011_CRC_sample.tex
+(F:\houghRevise\mva2011_CRC_sample.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(G:\tem\latex\latex\mva2011.cls
+(F:\houghRevise\mva2011.cls
 Document Class: mva2011 2010/10/13 v1.0 MVA2011 LaTeX class file
 (C:\CTEX\MiKTeX\tex\latex\base\article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
@@ -22,7 +22,7 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (G:\tem\latex\latex\balance.sty
+) (F:\houghRevise\balance.sty
 Package: balance 1999/02/23 4.3 (PWD)
 \oldvsize=\dimen103
 )
@@ -305,7 +305,7 @@ Package: ulem 2011/03/18
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-(G:\tem\latex\latex\mva2011_CRC_sample.aux
+(F:\houghRevise\mva2011_CRC_sample.aux
 
 LaTeX Warning: Label `fig:compa:a' multiply defined.
 
@@ -378,7 +378,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--59
  []
 
 
-Underfull \vbox (badness 1448) has occurred while \output is active []
+Underfull \vbox (badness 2529) has occurred while \output is active []
 
  [1
 
@@ -422,11 +422,8 @@ File: selectVimg00056_9.jpg Graphic file (type eps)
 File: selectedvotesimg00056.jpg Graphic file (type eps)
 
 <selectedvotesimg00056.jpg> [4]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: samples.jpg Graphic file (type eps)
-<samples.jpg>
+ <samples.jpg>
 File: dst6.jpg Graphic file (type eps)
  <dst6.jpg>
 File: dst3.jpg Graphic file (type eps)
@@ -434,12 +431,12 @@ File: dst3.jpg Graphic file (type eps)
 File: dst5.jpg Graphic file (type eps)
  <dst5.jpg>
 File: dst2.jpg Graphic file (type eps)
- <dst2.jpg>
+
+<dst2.jpg>
 File: dst4.jpg Graphic file (type eps)
  <dst4.jpg>
 File: dst1.jpg Graphic file (type eps)
-
-<dst1.jpg> [5]
+ <dst1.jpg> [5]
 File: a16.jpg Graphic file (type eps)
  <a16.jpg>
 File: a26.jpg Graphic file (type eps)
@@ -449,13 +446,13 @@ File: a71.jpg Graphic file (type eps)
 File: a116.jpg Graphic file (type eps)
  <a116.jpg>
 File: prf.eps Graphic file (type eps)
- <prf.eps>
+
+<prf.eps>
 File: cm2.eps Graphic file (type eps)
  <cm2.eps>
 File: cm1.eps Graphic file (type eps)
-
-<cm1.eps>
-Underfull \hbox (badness 1466) in paragraph at lines 492--493
+ <cm1.eps>
+Underfull \hbox (badness 1466) in paragraph at lines 445--446
 [][]\OT1/cmr/m/n/10 The precision-recall curves are shown in Fig-
  []
 
@@ -510,7 +507,7 @@ File: leo2.jpg Graphic file (type eps)
 File: leo3.jpg Graphic file (type eps)
  <leo3.jpg>
 File: ti1.jpg Graphic file (type eps)
- <ti1.jpg> (G:\tem\latex\latex\mva2011_CRC_sample.bbl
+ <ti1.jpg> (F:\houghRevise\mva2011_CRC_sample.bbl
 Overfull \hbox (3.5741pt too wide) in paragraph at lines 4--7
 \OT1/cmr/m/n/9 tec-t ar-bi-trary shapes.  \OT1/cmr/m/it/9 Pat-tern Recog-ni-tio
 n\OT1/cmr/m/n/9 , 13(2):111--
@@ -541,38 +538,30 @@ Package balance Warning: You have called \balance in second column
 File: wzp.jpg Graphic file (type eps)
  <wzp.jpg>
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 606.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 559.
 
-Underfull \hbox (badness 2772) in paragraph at lines 606--608
+Underfull \hbox (badness 2772) in paragraph at lines 559--561
 \OT1/cmr/m/n/10 He re-ceived his M.S. de-gree in
  []
 
 File: cjs.jpg Graphic file (type eps)
 <cjs.jpg>
-Underfull \hbox (badness 1527) in paragraph at lines 610--618
+Underfull \hbox (badness 1527) in paragraph at lines 563--571
 \OT1/cmr/m/n/10 put-er Sci-ence, Peking U-ni-ver-si-ty,
  []
 
 File: zhb.jpg Graphic file (type eps)
 <zhb.jpg>
-Underfull \hbox (badness 1072) in paragraph at lines 621--640
+Underfull \hbox (badness 1072) in paragraph at lines 574--593
 \OT1/cmr/m/n/10 Hefei U-ni-ver-si-ty of Tech- nol-o-gy,
  []
 
 File: mk.jpg Graphic file (type eps)
 <mk.jpg>
-Overfull \vbox (0.58989pt too high) has occurred while \output is active []
-
-
-[9]
 File: os.jpg Graphic file (type eps)
  <os.jpg>
-Underfull \hbox (badness 1648) in paragraph at lines 659--663
-|   []   |   []   |   []   |   []   |   []
- []
-
 File: ki.jpg Graphic file (type eps)
-<ki.jpg>
+ <ki.jpg>
 Missing character: There is no ¡ in font cmr10!
 Missing character: There is no ¡ in font cmr10!
 Missing character: There is no ¡ in font cmr10!
@@ -590,180 +579,43 @@ Missing character: There is no ¡ in font cmr10!
 Missing character: There is no ¡ in font cmr10!
 Missing character: There is no ¡ in font cmr10!
 
-Underfull \hbox (badness 3942) in paragraph at lines 667--668
+Underfull \hbox (badness 3942) in paragraph at lines 620--621
 [][]\OT1/cmr/m/n/10 He has served (or will serve) as the pro-
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 667--668
+Underfull \hbox (badness 3965) in paragraph at lines 620--621
 \OT1/cmr/m/n/10 fer-ences, in-clud-ing 1995 IEEE-IROS (Gen-er-al),
  []
 
-[10]
-Underfull \hbox (badness 1092) in paragraph at lines 674--676
-\OT1/cmr/m/n/10 re-view-ing progress. We take each item of the
- []
+
+Overfull \vbox (0.86746pt too high) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 674--676
-
- []
+Overfull \vbox (49.00008pt too high) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 679--681
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 627--629
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--686
+Overfull \vbox (1.94444pt too high) has occurred while \output is active []
 
- []
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 688.
-
-(C:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 690--692
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 695--697
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--702
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 705--707
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 710--712
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 715--717
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 720--722
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 725--727
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 730--732
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 735--737
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 740--742
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 749--751
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 754--756
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 759--761
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 766--768
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 771--773
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 776--778
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 781--783
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 786--788
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 791--793
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 796--798
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--803
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 806--808
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 811--813
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 816--818
-
- []
-
-
-Overfull \vbox (1.44444pt too high) has occurred while \output is active []
-
-
-[12] (G:\tem\latex\latex\mva2011_CRC_sample.aux)
+[11] (F:\houghRevise\mva2011_CRC_sample.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4310 strings out of 495355
- 56894 string characters out of 3183882
+ 4276 strings out of 495355
+ 56379 string characters out of 3183882
  138811 words of memory out of 3000000
- 7341 multiletter control sequences out of 15000+200000
- 17925 words of font info for 64 fonts, out of 3000000 for 9000
+ 7311 multiletter control sequences out of 15000+200000
+ 17709 words of font info for 63 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,22n,40p,1379b,745s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,22n,40p,1353b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on mva2011_CRC_sample.dvi (12 pages, 107832 bytes).
+Output written on mva2011_CRC_sample.dvi (11 pages, 79896 bytes).

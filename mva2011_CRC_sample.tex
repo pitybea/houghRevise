@@ -34,7 +34,7 @@
 \author[1]{Zhipeng Wang}
 \author[2]{Jinshi Cui}
 \author[2]{Hongbin Zha}
-\author[1]{Masataka \sout{Kegesawa}{\color{red}Kagesawa}}
+\author[1]{Masataka Kagesawa}
 \author[1]{Shintaro Ono}
 \author[1]{Katsushi Ikeuchi}
 \affil[1]{Institute of Industrial Science, The University of Tokyo, Japan \authorcr
@@ -72,12 +72,12 @@ The sliding-window methods consider all sub-images by using classifiers to decid
 The Hough transform based methods, represented by the ISM~\cite{lb1}, start by detection of object parts, and object hypotheses are given by summing up all the votes voted by the object parts.
 \end{comment}
 
-\sout{In ITS areas, detection methods using cameras can be used for navigation, safe driving, surveillance, and sustaining results from other sensors. These methods can be used to detect pedestrians, bicycle riders, and automobiles, and here we focus on techniques from the area of computer vision for detection of such objects.}
-{\color{red}In ITS areas, detection methods using cameras can be used for navigation, safe driving, surveillance, and sustaining results from other sensors. In traditional ITS applications, vehicles are main targets. Currently pedestrians are also considered as important subjects of ITS applications, and bicycles also become very popular for environmental and economical reasons. In Japan, the number of traffic accidents among bicycles and pedestrians is very large. Thus we tackle an issue of detecting freely moving bicycle riders and pedestrians from the data collected by a camera which keeps them under surveillance from the top. These situations can be observed in parks, university campuses, station squares, tourist spots, etc.  Here we focus on techniques from the area of computer vision for detection under surveillance scenarios.
+
+ In ITS areas, detection methods using cameras can be used for navigation, safe driving, surveillance, and sustaining results from other sensors. In traditional ITS applications, vehicles are main targets. Currently pedestrians are also considered as important subjects of ITS applications, and bicycles also become very popular for environmental and economical reasons. In Japan, the number of traffic accidents among bicycles and pedestrians is very large. Thus we tackle an issue of detecting freely moving bicycle riders and pedestrians from the data collected by a camera which keeps them under surveillance from the top. These situations can be observed in parks, university campuses, station squares, tourist spots, etc.  Here we focus on techniques from the area of computer vision for detection under surveillance scenarios.
 \begin{comment}
 Here we focus on techniques from the area of computer vision for detection of pedestrians and bicycle riders under surveillance scenarios.
 \end{comment}
-}
+
 
 
 
@@ -91,12 +91,12 @@ The other methods~\cite{lb1,ac2,ac3,ac18} detect objects based on the generalize
 
 
 
-A typical Hough transform based method contains two steps: training and detection. During training, a codebook of object parts is built from a set of well annotated images. Each code in the codebook contains information about the appearance of the object part, the relative position to the object center, and the class label. Each object part's appearance is given in the form keypoint descriptors~\cite{lb1}, image patches~\cite{ac6,ac7}, or image regions~\cite{ac8}. Each code not only encode one object part's appearance, but also its offset to the \sout{the} object center and the class label. while during detection, on each test image, object parts are detected. Then every object part is matched against the codebook, and activates several nearest codes in appearance. The offset and class label encoded in each activated code will act as a vote. All the votes from the object parts are added up to form a Hough image. The peaks of the Hough image are considered as detection hypotheses with the height of each peak as the confidence for the corresponding hypothesis.
+A typical Hough transform based method contains two steps: training and detection. During training, a codebook of object parts is built from a set of well annotated images. Each code in the codebook contains information about the appearance of the object part, the relative position to the object center, and the class label. Each object part's appearance is given in the form keypoint descriptors~\cite{lb1}, image patches~\cite{ac6,ac7}, or image regions~\cite{ac8}. Each code not only encode one object part's appearance, but also its offset to the object center and the class label. \sout{while during} {\color{red}During} detection, on each test image, object parts are detected. Then every object part is matched against the codebook, and activates several nearest codes in appearance. The offset and class label encoded in each activated code will act as a vote. All the votes from the object parts are added up to form a Hough image. The peaks of the Hough image are considered as detection hypotheses with the height of each peak as the confidence for the corresponding hypothesis.
 
-Two challenging issues for detection methods are how to separate near objects and how to separate similar different-class objects. The target objects, in the case of ITS applications, are pedestrians, bicycle riders, and automobiles. In the schema of sliding window, usually \sout{maximum}{\color{red}non-maximum} suppression is needed for post-processing, and a mechanism in ~\cite{ac4} works by excluding from the feature pool the features which belong to each successive found detection response. In Hough transform based methods, a similar mechanism is also employed in ~\cite{ac9}, however, this effort is after the forming of Hough image. During the forming of a Hough image, two kinds of votes make detection challenging: (1) votes casted by object parts from near objects make the peaks corresponding to different objects mixed up, and (2) votes casted by similar different-class object parts lead to tough decisions on the class label of the peaks. See Figure~\ref{fig:compa:c}. Before the forming of Hough images, problems also arise from the pollution of training images' background part to the codebook. During training a very clean codebook can be built with foreground marked, which needs manual efforts. Otherwise, large amount of training examples are needed for the effectiveness of the codebook, and this harms efficiency.
+Two challenging issues for detection methods are how to separate near objects and how to separate similar different-class objects. The target objects, in the case of ITS applications, are pedestrians, bicycle riders, and automobiles. In the schema of sliding window, usually  non-maximum suppression is needed for post-processing, and a mechanism in ~\cite{ac4} works by excluding from the feature pool the features which belong to each successive found detection response. In Hough transform based methods, a similar mechanism is also employed in ~\cite{ac9}, however, this effort is after the forming of Hough image. During the forming of a Hough image, two kinds of votes make detection challenging: (1) votes casted by object parts from near objects make the peaks corresponding to different objects mixed up, and (2) votes casted by similar different-class object parts lead to tough decisions on the class label of the peaks. See Figure~\ref{fig:compa:c}. Before the forming of Hough images, problems also arise from the pollution of training images' background part to the codebook. During training a very clean codebook can be built with foreground marked, which needs manual efforts. Otherwise, large amount of training examples are needed for the effectiveness of the codebook, and this harms efficiency.
 
 
-In videos, motion information is also available by simple tracking of object parts. Thus we propose a method for detection which utilizes both appearance and motion information. \sout{the}{\color{red}The} method is based on the common fate principle~\cite{ac13}. The principle is one of the visual perception principles as theorized by gestalt psychologists, and it states for human beings, tokens moving coherently are perceptually grouped. This provides an intuition to group the object parts by their motion patterns, and let them vote afterwards. In our work, the object parts are represented using keypoint descriptors, which are tracked to generate trajectories. The object parts are grouped by the pairwise similarities of their corresponding trajectories. Having the assumption that object parts in the same motion group  probably belong to the same object, for each object part, we assign higher weights for the votes of this object parts which are more {\lq\lq}agreeable{\rq\rq} within the motion group. This results in votes corresponding to true detection responses are more likely to be assigned higher weights. And on a Hough image formed by summing up these weighted votes, the peaks are easier to find as shown in Figure~\ref{fig:compa:d}.
+In videos, motion information is also available by simple tracking of object parts. Thus we propose a method for detection which utilizes both appearance and motion information. The method is based on the common fate principle~\cite{ac13}. The principle is one of the visual perception principles as theorized by gestalt psychologists, and it states for human beings, tokens moving coherently are perceptually grouped. This provides an intuition to group the object parts by their motion patterns, and let them vote afterwards. In our work, the object parts are represented using keypoint descriptors, which are tracked to generate trajectories. The object parts are grouped by the pairwise similarities of their corresponding trajectories. Having the assumption that object parts in the same motion group  probably belong to the same object, for each object part, we assign higher weights for the votes of this object parts which are more {\lq\lq}agreeable{\rq\rq} within the motion group. This results in votes corresponding to true detection responses are more likely to be assigned higher weights. And on a Hough image formed by summing up these weighted votes, the peaks are easier to find as shown in Figure~\ref{fig:compa:d}.
 
 
 
@@ -116,7 +116,7 @@ In videos, motion information is also available by simple tracking of object par
 \includegraphics[width=0.22\textwidth,bb=0 0 600 480]{Untitled-4.jpg}
 \label{fig:compa:d}
 }
-\caption{Merit of the proposed method. (a) Original image. (b) Motion \sout{group}{\color{red}grouping} results. {\color{red}Some parts are enlarged to show details.} (c) Original Hough image. (d) Hough image formed using our method. The grids in (c) and (d) correspond to the grids in(a).}
+\caption{Merit of the proposed method. (a) Original image. (b) Motion   grouping results.  Some parts are enlarged to show details. (c) Original Hough image. (d) Hough image formed using our method. The grids in (c) and (d) correspond to the grids in(a).}
 \label{fig:compa}
 \end{figure}
 
@@ -133,7 +133,7 @@ The remaining paper is organized as follows. Section 2 reviews related work. Sec
 
 \section{Related Work}
 
-Our work is most related to object detection methods~\cite{ac9,ac22,lb1,ac5,ac10,ac21} based on the Hough transform framework. Recently, such methods make a lot of \sout{process}{\color{red}progress}. The ISM~\cite{lb1,ac5} is extended  by notifying correspondences between the object parts and the hypotheses~\cite{ac9} for the detection of multiple near objects. While in~\sout{\cite{ac10}}{\color{red}\cite{ac6,ac10,ac7}} the Hough transform is placed in a discriminative framework for object detection in a way that the codes are assigned different weights by the co-occurrence frequency of their appearance and offset to the object center.
+Our work is most related to object detection methods~\cite{ac9,ac22,lb1,ac5,ac10,ac21} based on the Hough transform framework. Recently, such methods make a lot of  progress. The ISM~\cite{lb1,ac5} is extended  by notifying correspondences between the object parts and the hypotheses~\cite{ac9} for the detection of multiple near objects. While in~\cite{ac6,ac10,ac7} the Hough transform is placed in a discriminative framework for object detection in a way that the codes are assigned different weights by the co-occurrence frequency of their appearance and offset to the object center.
 Two Hough transform methods consider the grouping of object parts~\cite{ac26,ac25}. The method in~\cite{ac26} deals with scale change. Instead of estimating the scale by local features trained from different scaled examples, the votes are considered as voting lines. By considering the difference of the voted centers, local features are firstly grouped and then vote more consistently for the object center. In~\cite{ac25}, the grouping of object parts, the correspondence between object parts and object, and the decisions on detection hypotheses are optimized in the same energy function. For this method, the problem is that the grouping results don't have meaning or correspond to and real entities.
 
 The work is also related to object detection methods by trajectories~\cite{my9,ac24}, methods weighting features~\cite{ij13}, methods dealing with codebook noise~\cite{ac19}, and methods which integrate temporal information~\cite{ac23}.
@@ -162,7 +162,7 @@ B(\tilde{\bf{x}},\tilde l;V)
 \end{array} \right. \:.
 \label{eq2}
 \end{equation}
-Here $G(\tilde{\bf{x}};{\bf{x}}_V,\sigma )$ is a Gaussian function that fixes the \sout{spacial}{\color{red}spatial} gap between $\tilde{\bf{x}}$ and ${\bf{x}_V}$.
+Here $G(\tilde{\bf{x}};{\bf{x}}_V,\sigma )$ is a Gaussian function that fixes the spatial gap between $\tilde{\bf{x}}$ and ${\bf{x}_V}$.
 
 Let $M$ be the total number of object parts on the image, then by summing up over all the object parts, the confidence of $\tilde{\bf{x}}$ being the center of a $\tilde{l}$-class object is given by,
 
@@ -214,7 +214,7 @@ S({\bf{g}} \to V_{{\bf{e}}_m})
 \end{aligned}
 \]
 
-\sout{By assuming all object parts in the same motion group are from the same object, which means motion grouping gives good results. The center position and the class label given by one vote shall be consistent with that given by the motion group.}{\color{red}By assuming all object parts in the same motion group are from the same object, which means motion grouping gives good results, the estimations for center position and class label given by every object part shall be consistent with that given by the motion group.}
+ By assuming all object parts in the same motion group are from the same object, which means motion grouping gives good results, the estimations for center position and class label given by every object part shall be consistent with that given by the motion group.
 Thus for a particular vote of ${\bf{e}}_m$, i.e., ${\tilde{V}}_{{\bf{e}}_m}$, a weight is assigned to it by considering its consistence with $\bf{g}$ and the consistence of ${\bf{e}}_m$'s other votes  with $\bf{g}$, as:
 \begin{equation}
 \begin{aligned}
@@ -262,7 +262,7 @@ The grouping result $\gamma=\{\bf{g}\}$, can be replaced by grouping results bas
 \subsection{Motion Grouping}
 In this subsection how to group the object parts by their motion patterns is introduced. Basically, the object parts are tracked, and clustered by their motion patterns. The object parts are tracked through frames before and after the current frame to generate trajectories. Then the object parts are grouped by their corresponding trajectories' pairwise motion similarity.
 
-The object parts in this method are in the form of keypoint descriptors. The Harris Corner~\cite{harris} feature is chosen{\color{red}, for robustness,} to represent each object part, while for appearance, the region covariance~\cite{regionc} feature of the image patch around each keypoint is used. {\color{red}The image feature is chosen because of its flexibility to combine multiple channels of information, and also for its capability of handling scale changes in a certain range.}
+The object parts in this method are in the form of keypoint descriptors. The Harris Corner~\cite{harris} feature is chosen, for robustness, to represent each object part, while for appearance, the region covariance~\cite{regionc} feature of the image patch around each keypoint is used. The image feature is chosen because of its flexibility to combine multiple channels of information, and also for its capability of handling scale changes in a certain range.
 For each object part, a trajectory is generated by tracking its corresponding Harris Corner by the KLT tracker~\cite{ij2}. To group the trajectories, two pairwise similarities are defined.
 
 Let $T_{{\bf{e}}_m}$ and $T_{{\bf{e}}_n}$ denote two trajectories corresponding to ${{\bf{e}}_m}$ and ${{\bf{e}}_n}$. The first similarity between two trajectories is defined as,
@@ -271,14 +271,14 @@ Let $T_{{\bf{e}}_m}$ and $T_{{\bf{e}}_n}$ denote two trajectories corresponding 
  {D_1}(T_{{\bf{e}}_m},T_{{\bf{e}}_n}) = \mathop {\max }\limits_{i=1...L} (|{\bf{x}}^i_{T_{{\bf{e}}_m}}-{\bf{x}}^i_{T_{{\bf{e}}_n}}|)\:.
 \]
 
-Here,  $i$ is the frame index, and $L$ is \sout{the length of the overlapping part of the two trajectories}{\color{red} the number of frames which are crossed by both trajectories}.
+Here,  $i$ is the frame index, and $L$ is   the number of frames \sout{which are crossed by both trajectories}{\color{red} which both trajectories exist}.
 
 To define the second similarity, the $i$th directional vector of $T$ is firstly defined as, ${\bf{d}}^i_T={\bf{x}}^{i+3}_{T}-{\bf{x}}^i_{T}$. Let ${\bf{a}}_i={\bf{d}}^i_{T_{{\bf{e}}_m}}$, ${\bf{b}}_i={\bf{d}}^i_{T_{{\bf{e}}_n}}$, $a_i=\frac{{{{\bf{a}}_i}\cdot{{\bf{b}}_i}}}{{{{\bf{a}}_i}\cdot{{\bf{a}}_i}}}$, and $b_i=\frac{{{{\bf{a}}_i}\cdot{{\bf{b}}_i}}}{{{{\bf{b}}_i}\cdot{{\bf{b}}_i}}}$. Then the second similarity is defined as,
 \[
 {D_2}(T_{{\bf{e}}_m},T_{{\bf{e}}_n})= \mathop {\max }\limits_{i=1...L-3} (\max (|{{\bf{a}}_i} - a_i {{\bf{a}}_i}|,|{{\bf{b}}_i} - b_i{{\bf{b}}_i}|))\:.
 \]
 
-Before grouping the trajectories, the static points are excluded. \sout{Inspired by \cite{my9}, a minimal spanning tree of the trajectories is built upon $D_1$, and split by cutting edges larger than a threshold, $D^1_{th}$. For each element of the splitting results, a minimal spanning tree is built upon $D_2$ and split by cutting the edges larger than a threshold, $D^2_{th}$.}{\color{red} The defined $D_1$ is calculated for all pairs of trajectories, and a minimal spanning tree is then built using the calculated distances. The built mst is split by cutting edges larger than a threshold, $D^1_{th}$, and this gives a grouping result of the trajectories. For each element in the clustering result, $D_2$  is used in the same procedure to generate even smaller clusters.} This hierarchical procedure ensures that trajectories in the same group have both small $D_1$ and $D_2$. Each trajectory corresponds to an object part, and the grouping results of the trajectories correspond to grouping results of the object parts.
+Before grouping the trajectories, the static points are excluded.   The defined $D_1$ is calculated for all pairs of trajectories, and a minimum spanning tree is then built using the calculated \sout{distances}{\color{red}similarities}. The built \sout{mst}{\color{red}minimum spanning tree} is split by cutting edges larger than a threshold, $D^1_{th}$, and this gives a grouping result of the trajectories. For each element in the clustering result, $D_2$  is used in the same procedure to generate even smaller clusters. This hierarchical procedure ensures that trajectories in the same group have both small $D_1$ and $D_2$. Each trajectory corresponds to an object part, and the grouping results of the trajectories correspond to grouping results of the object parts.
 \subsection{Codebook}
 For training, Harris corners are extracted from the training images with the object center and the class label annotated. In this method, region covariance is chosen to represent the appearance, which is defined as,
 \[{\bf{r}} = \frac{1}{{K - 1}}\sum\limits_{i = 1}^K {({{\bf{z}}_i} - {\bf{\mu }}){{({{\bf{z}}_i} - {\bf{\mu }})}^T}} \;.\]
@@ -296,20 +296,16 @@ variances are generated for each image patch by using the
 pixels of the top-left, the top-right, the bottom-left, the
 bottom-right, the central, and all of the image patch. Then
 besides the offset and the class label, a code contains six
-region covariances. \sout{When an object part is matched against
+region covariances.   All codes from all training images constitute the codebook. When an object part is matched against
 the codebook, the similarity between the image patch of the
 object part and a code is defined by the smallest similarity
-of the corresponding region covariance. In this way,
-a codebook of object parts is built.}{\color{red} All codes from all training images constitute the codebook. When an object part is matched against
-the codebook, the similarity between the image patch of the
-object part and a code is defined by the smallest similarity
-of the corresponding region covariance.}
+of the corresponding region covariance.
 \section{Detection}
-After forming the Hough image, the detection hypotheses are validated. Let ${\bf{h}}=\{ H \}$ be the points in the Hough space which are evaluated by $C({\bf{x}}_{H},l_{H})$ and have $C({\bf{x}}_{H},l_{H})>0$.  Inspired by~\cite{ac9}, the hypotheses are validated by an optimizing procedure. Let $O$ be the number of the points in ${\bf{h}}$. \sout{let}{\color{red}Let} $u_i=1\mbox{ or } 0$ indicate $H_i$ being a true object center or not. The problem is:
+After forming the Hough image, the detection hypotheses are validated. Let ${\bf{h}}=\{ H \}$ be the points in the Hough space which are evaluated by $C({\bf{x}}_{H},l_{H})$ and have $C({\bf{x}}_{H},l_{H})>0$.  Inspired by~\cite{ac9}, the hypotheses are validated by an optimizing procedure. Let $O$ be the number of the points in ${\bf{h}}$.  Let $u_i=1\mbox{ or } 0$ indicate $H_i$ being a true object center or not. The problem is:
 \[
 \arg \max\limits_{u_i} \prod\limits_{i = 1}^O { C^{u_i}({H_i})} \Longleftrightarrow\arg \max\limits_{u_i} \sum\limits_{i = 1}^O {{u_i}\ln (C({H_i})} )\:.
 \]
-Let $v_{ij}=1\mbox{ or } 0$ indicate \sout{${e}_j$}{\color{red}${\bf{e}}_j$} belongs to $H_i$ or not, then
+Let $v_{ij}=1\mbox{ or } 0$ indicate  ${\bf{e}}_j$ belongs to $H_i$ or not, then
 \[
 \begin{aligned}
 C(H_i)&=\sum\limits^M_{j=1} C({\bf{x}}_{H_i},l_{H_i};{\bf{e}}_j)w({\bf{e}}_j)\\
@@ -339,51 +335,8 @@ Following~\cite{ac9}, the optimal result for the problem is given by greedy maxi
     \label{alg:gm}
      Let $\varepsilon$ be the set of object parts, $C_{th}$ be the low confidence threshold to accept detection responses, and $\hat{\bf{h}}$ be the local maxima of $\bf{h}$
 
-     {\color{gray}
-         \begin{algorithmic}[1]
+     
 
-
-
-
-        \WHILE {$\varepsilon \ne \emptyset$}
-
-            \STATE Form $\bf{h}$ with $\varepsilon$\\
-
-            \STATE Generate $\hat{\bf{h}}$ and select $H_i \in {\hat{\bf{h}}}, u_i=0$\\$ \mbox{ and } \forall {H^{'}} \in {\hat{\bf{h}}, C({\bf{x}}_{H_i},l_{H_i}) >= C({\bf{x}}_{H^{'}},l_{H^{'}}) } $
-            \IF {$C({\bf{x}}_{H_i},l_{H_i}) >=C_{th}$}
-
-                \STATE $u_i\leftarrow1$
-
-                \FOR{${\bf{e}}_j\in \varepsilon$}
-
-                    \IF{$\forall {H^{'}} \in {\hat{\bf{h}}}, C({\bf{x}}_{H_i},l_{H_i}|{\bf{e}}_j) >= $ \\\ $C({\bf{x}}_{H^{'}},l_{H^{'}}|{\bf{e}}_j)$}
-
-                    \STATE $v_{ij}\leftarrow1$
-
-                    \STATE $\varepsilon\leftarrow \varepsilon -\{ {\bf{e}}_j \}$
-
-                    \ENDIF
-
-                \ENDFOR
-
-            \ELSE
-
-                \FOR {${\bf{e}}_j \in \varepsilon$}
-
-                \STATE $v_{1j}\leftarrow1$
-
-                \ENDFOR
-
-                \STATE $\varepsilon\leftarrow \emptyset$
-
-            \ENDIF
-
-        \ENDWHILE
-    \RETURN $\{H_i,u_i=1\}$
-
-    \end{algorithmic}
-}
-{\color{red}
     \begin{algorithmic}[1]
 
 
@@ -422,11 +375,11 @@ Following~\cite{ac9}, the optimal result for the problem is given by greedy maxi
     \RETURN $\{H_i\}$
 
     \end{algorithmic}
-}
+
 \end{algorithm}
 
 \section{Experimental Results}
-In experiments, improvement of the method is verified in terms of detection accuracy. The method is tested on the P-campus dataset with~\cite{ac9} as benchmark, and then tested on a dataset of \sout{sevral}{\color{red}several} animals.
+In experiments, improvement of the method is verified in terms of detection accuracy. The method is tested on the P-campus dataset with~\cite{ac9} as benchmark, and then tested on a dataset of several animals.
 \subsection{ Campus-scene Detection }
 \begin{figure}
 \centering
@@ -467,7 +420,7 @@ In experiments, improvement of the method is verified in terms of detection accu
 \label{fig:mgr}
 \end{figure}
 
-For motion grouping, each keypoint is tracked through 10 frames before and through 10 frames after the current frame. The similarity of two 21-point trajectories is defined using only \sout{the overlapping part}{\color{red} the frames crossed by both trajectories}. To set the two thresholds for motion grouping, $D_1$ and $D_2$ are  measured for keypoint pairs of different objects. $D^1_{th}$ is set that it is larger than only 10\% of the measured $D_1$s, and so is $D^2_{th}$. By doing so, keypoints belonging to different objects are not likely to be grouped together. So that in one motion group, the keypoints are very likely to belong to the same object, as shown in Figure \ref{fig:mgr}.
+For motion grouping, each keypoint is tracked through 10 frames before and through 10 frames after the current frame. The similarity of two 21-point trajectories is defined using only   the frames \sout{crossed by both trajectories}{\color{red} which both trajectories exist}. To set the two thresholds for motion grouping, $D_1$ and $D_2$ are  measured for keypoint pairs of different objects. $D^1_{th}$ is set that it is larger than only 10\% of the measured $D_1$s, and so is $D^2_{th}$. By doing so, keypoints belonging to different objects are not likely to be grouped together. So that in one motion group, the keypoints are very likely to belong to the same object, as shown in Figure \ref{fig:mgr}.
 
 To form the Hough image, 35 best matched codes are chosen from the codebook for each object part. In (\ref{eq3}), $d$ and $\sigma$ need to be given. The precision-recall curves are based on $\sigma$, while $d$ is set to be 10. Here $\sigma$ is the most important parameter.
 
@@ -541,7 +494,7 @@ The confusion matrices are given in Figure~\ref{fig:pr:b}. For clarity of the co
 \caption{Example Hough images. On the top are the original images. In the middle are the Hough images formed by votes with uniform priors. On the bottom are the Hough images formed by votes with the proposed weights. Red indicates leopards, and blue indicates tigers. Note for the two leopards, there is no peak corresponding to the right one on the benchmark Hough image. For the three leopards, there is also no peak corresponding to the leopard in behind on the benchmark Hough image.}
 \label{fig:BcHi}
 \end{figure}
-\textbf{Dataset} \sout{To show the effectiveness of our method in general cases, we prepared a more difficult dataset.}{\color{red} In order to show that our method can be used for general purposes, we test our method on complicated scenes, especially, complicated background.  Even in these cases, our method works well, which shows robustness of our method.} A mini dataset is built upon leopards and tigers of the family Felidae. Especially, the image feature used by this method belongs to the type of texture, and texture from different \sout{postions}{\color{red}positions} of the leopards are almost the same. The dataset contains 6 video clips of 9 leopards and 4 tigers. The frame size is 640$\times$480. Both the animals are in the side view.
+\textbf{Dataset} In order to show that our method can be used for general purposes, we test our method on complicated scenes, especially, complicated background.  Even in these cases, our method works well, which shows robustness of our method. A mini dataset is built upon leopards and tigers of the family Felidae. Especially, the image feature used by this method belongs to the type of texture, and texture from different  positions of the leopards are almost the same. The dataset contains 6 video clips of 9 leopards and 4 tigers. The frame size is 640$\times$480. Both the animals are in the side view.
 
 \textbf{Implementation settings} Most implementation settings are the same with the settings for campus object detection. For training, 5 leopards and 2 tigers are used. The size of the image patch around each keypoint is 27$\times$27.
 
@@ -562,7 +515,7 @@ The confusion matrices are given in Figure~\ref{fig:pr:b}. For clarity of the co
 \label{fig:bgdr}
 \end{figure}
 \section{Conclusion}
-The computational ability of human beings is limited, while the ability to detect is far beyond machines. Thus, it is very possible that this detection ability benefits from multiple perceptual mechanisms. By using one of these mechanisms, we propose a detection method. \sout{The}{\color{red}By embedding motion grouping results into the voting schema of hough transform, the} method is capable to distinguish near objects' positions, to distinguish similar objects' labels, and to maintain detection rate with a noisy codebook. The success of our method further demonstrate the advancement of perceptual mechanisms in human beings. And the success of this method will help with detection methods in ITS areas.
+The computational ability of human beings is limited, while the ability to detect is far beyond machines. Thus, it is very possible that this detection ability benefits from multiple perceptual mechanisms. By using one of these mechanisms, we propose a detection method.  By embedding motion grouping results into the voting schema of hough transform, the method is capable to distinguish near objects' positions, to distinguish similar objects' labels, and to maintain detection rate with a noisy codebook. The success of our method further demonstrate the advancement of perceptual mechanisms in human beings. And the success of this method will help with detection methods in ITS areas.
 % conference papers do not normally have an appendix
 
 
@@ -604,7 +557,7 @@ This work was, in part, supported by SCOPE program by Ministry of Internal Affai
 %\renewcommand{\captionlabeldelim}{}
 \parpic{\includegraphics[width=0.13\textwidth,bb=0 0 600 800]{wzp.jpg}}
 \noindent {\bf Zhipeng Wang} received his B.S. degree in Industrial Engineering from Tsinghua University, China, in 2007. He received his M.S. degree in Computer Applied Technology
-  from Peking University, 2010 and is currently a Ph.D. \sout{Candidate}{\color{red}student} in the Department of {\color{red}Computer Science,} the University of Tokyo. His research interests are in the areas of computer vision and machine learning.
+  from Peking University, 2010 and is currently a Ph.D. student in the Department of Computer Science, the University of Tokyo. His research interests are in the areas of computer vision and machine learning.
 
 \parpic{\includegraphics[width=0.13\textwidth,bb=0 0 731 975]{cjs.jpg}}
 \noindent {\bf Jinshi Cui}  received the B.S. and Ph.D. degrees
@@ -657,8 +610,8 @@ Road Traffic Systems.
 
 \parpic{\includegraphics[width=0.13\textwidth,bb=0 0 120 160]{os.jpg}}
 \noindent {\bf Shintaro Ono} received the BE degree in 2001 and PhD degree in 2006 from The University of Tokyo.
-\sout{Currently he is a Project Research Associate in Advanced Mobility Research Center (ITS Center), The University of Tokyo.} {\color{red}Currently he is a Project Associate Professor in Advanced Mobility Research
-Center (ITS Center), The University of Tokyo.}
+  Currently he is a Project Associate Professor in Advanced Mobility Research
+Center (ITS Center), The University of Tokyo.
 His research interests include sensing system and computer vision/graphics for ITS, and digital archiving of cultural heritage objects.
 
 \parpic{\includegraphics[width=0.13\textwidth,bb=0 0 354 472]{ki.jpg}}
@@ -671,156 +624,30 @@ He has received several awards, including the David Marr Prize in computational 
 \section*{Responding to the reviewer's comments }
 
 {\color{blue}
-{\color{black}We would like to thank the reviewer for all the valuable comments. We also want to thank the editors and all other people who helped with the reviewing progress. We take each item of the reviewer's comments either as one suggestion or as  one question. For suggestions, we revise the paper accordingly, and for questions, we give our answers.}
+{\color{black}We would like to thank the reviewer for all the valuable comments. For all the suggestions, we revise the paper accordingly.}
 \newline
 
-In the introduction, authors address that the propose method can be applied to detecting pedestrians, bicycles riders, and automobiles.  Therefore the system should be embedded into either onboard unit or road side unit.  As camera usage in ITS is rather restricted in terms of field of view, reference image such as fig 1 is rather far from the practical situation.  Authors should consider image sequences which fit to the application of ITS.
-
-{\color{black}Answer: In the mentioned application areas of mounting cameras to vehicles, our method will have limited performance. However, our method has its potential application value under surveillance scenarios, which is also important in ITS. The section of introduction is revised.}
-\newline
-
-Images enhanced by results such as Fig.1 (B), Fig.4 are too small to see.  Appropriate size should be considered.
-
-{\color{black}Revised.}
-\newline
+The proposed method has the limitation in handling the scale change as described in the response from the authors. Explanations about this limitation should be included in the paper. Also, the proposed method assumes ITS applications using surveillance cameras, which have some restriction on scale change of the pedestrians. The authors should include such discussions.
 
 
-The proposed framework seems to be unable to handle objects with different scales since no scale estimation is performed in keypoint detection and fixed values are used for \url{\sigma} and d in eq. (2). Handling the scale change is important for the applications in the ITS area, and the lack of this limits the effectiveness and applicable area significantly.
 
-{\color{black}Answer: The ability of handling scale changes in our method is very limited. This ability depends on the matching of the region covariance. For each keypoint, 6 different-scale image pathes around it are used for generating region covariances as shown in figure 3 (b). When considering the appearance similarity of two keypoints, the pair of most similar image patches from different keypoints are selected for calculation.  Also in the applicable area of surveillance, scale can be partially handled by sensors or equipment settings. We   will try some new efforts to enhance the ability of our method for scale changes in future.}
-\newline
-
-In section 3.2, similarity between the trajectories is defined, but it is not clear how the motion groups are formed.
-
-{\color{black}Answer: As is revised in the mentioned section, we define a pairwise similarity between two trajectories, and use this pairwise similarity to build a minimal spanning tree. If we cut one edge of this tree, we get two clusters, and if we cut edges larger than a threshold, we can get several clusters.}
-\newline
-
-It is not straightforward to compare the trajectories with different length, and it should be described in detail how the trajectory with length L is extracted.
-
-{\color{black} Answer: By using the words of ``overlapping part'', we fail to give proper explanation of L. Currently, this is revised. Suppose there are 4 frames, one trajectory has points on frame 1, 2, and 3, and the other trajectory has points on frame 2, 3, and 4, then L is 2. L is the number of frames crossed by both trajectories, here frame 2 and 3.}
-\newline
-
-Regarding the similarity of two trajectories, max operation is used to measure the similarity of positions and moving directions of the object parts, but this operation seems to be unstable because the similarity is defined using only one point in a trajectory.
-
-{\color{black} Answer: Very often, two trajectories are of different lengths, and max has better stability than average under such situations.  And if we successfully show the motion grouping results, the procedure might become more credible.}
-\newline
-
-For detecting and tracking the object parts, Harris corner detector, region covariance, and KLT tracker are used, but there is no description about the reason why these methods are introduced.
-
-{\color{black} Answer: Section 3.2 is revised. Harris corner and KLT tracker are used to promise robustness. And region covariance is selected for the flexibility to combining information from different channels, and also for its ability to partially handle scale changes when used in our manner.}
-\newline
-
-In section 3.3, the definition of the code and matching between the codes and the image patch are described, but the method of codebook generation is not described.
-
- {\color{black} Answer: The mentioned section is revised. In our method, we follow the most naive procedure, just store all the object parts as codes of appearance, offset to the object center, and label. During detection, the appearance of each detected object part is used to find N codes with the most similar appearance from the codebook. And these N codes will indicate the position and label of the object to detect.}
-\newline
-
-In Algorithm 1, u and v can be omitted, and the second line of procedure 3 is also omitted. Please consider to eliminate unnecessary parts.
-
-{\color{black} Revised.}
-\newline
-
-In section 5, experimental results are shown using the P-campus and animal datasets. There is no description that these dataset is appropriate to show the effectiveness for the applications in ITS field. Especially animal dataset seems to have no relation to ITS.
-
-{\color{black}Answer: The first dataset is consistent with the expectation of the application, surveillance. As for the dataset of animals, it is used to verify whether our method still works under challenging situations. The image feature used here is texture, and the texture from different positions of the leopards are almost the same. As we want to verify our framework of combining motion, this is a more challenging dataset in more general cases. }
-\newline
-
-In the experiments in the section 5.1, several images are selected for training randomly in the image sequences which are used for test the performance. Although the procedure of training and testing is not clearly described, using such images for training seems to be inappropriate because there are similar images in the test data. If this is not the case, more explanations are necessary.
-
-{\color{black} Answer: Part of our training examples indeed appear in the test sequences. This is related to the emphasis of this work, that we want to verify our framework of combining motion information, instead of proposing image matching procedures. Also both our method and the benchmark method use the same training and testing images, so the comparison is fair and proves the effectiveness of our method. And we consider this comment as a valuable suggestion for future improvement of the method.}
-\newline
-
-It seems to readers that differentiating pedestrian and bicycle as detection is too abrupt as there is no explanation how to distinguish two objects.
-
-{\color{black} Answer: The hough image formed by our method actually should be 4-dimensional, which is confidence based on x, y, and label. For easier visualization, we use color to represent the dimension of label. In fact, from equation (1), label is included, and considered for estimation.}
-\newline
-
-In figure 1 and 8, votes are shown in 3D graphs. The dynamic range is significantly different between the Hough images of the proposed method and the conventional method, and it is not apparent that there is no peak for the several leopards.
-
-{\color{black}Answer: In figure 8, all peaks are clear for our method, while for the conventional method, only part of the peaks are clear.}
-\newline
-
-Discriminative Hough transform is proposed in [7], [15], and [19]. In section 2, only [15] is cited, but all of them should be cited.
+In section 3.2, both "similarity" and "distance" are used. They are confusing.
 
 {\color{black}Revised.}
 
-In conclusion, there is no description about voting based on the motion group, and it is a main contribution of this paper.
-
+"Cross" is inappropriate for describing L. L is the number of frames in which both trajectories exist.
 {\color{black}Revised.}
-\newline
 
-Also reviewer believe that quantitative consideration on the correctness from the motion grouping should be mentioned as motion flow might be different when the object is close and moving toward the camera.
-
-{\color{black}Answer: In the scenarios of surveillance, the setup of equipment can be used to ensure the correctness of trajectories, and guarantee good motion grouping results. Thus at the current stage, there is no quantitative evaluation of the motion grouping, and just qualitative results shown in figures, which should be clear in the revised figure 1, 2, 4.}
-\newline
-
-There are lots of typos and problems in English expressions.
-
-{\color{black}Revised with our best efforts.}
-\newline
-
-The followings are some of them:
-
-- Author name Kegesawa \url{-->} Kagesawa
-
+What is "mst" in the last paragraph of section 3.2?
 {\color{black}Revised.}
-\newline
 
-- p.1 right l.14; while dring detection
 
-{\color{black}We cannot find this error, maybe this is caused by different fonts of pdf readers.}
-\newline
+Discussion about max operation for measuring similarity of two trajectories, which is in the response from the authors, should be included in the paper.
 
-- p.1 right l.28; maxmum suppression \url{-->} non-maximum suppression
+In section 5.1, the procedure of training and testing should be clearly described in the paper since the some test images are used for training. And the explanation is necessary why such a procedure is used.
 
+p.1 right bottom: "while" should be removed.
 {\color{black}Revised.}
-\newline
 
-- p.2 left l.19; the \url{-->}The
-
-{\color{black}Revised.}
-\newline
-
-- p.2 right l.4; process \url{-->} progress?
-
-{\color{black}Revised.}
-\newline
-
-- p.3 right l.35; no verbe in the sentence.
-
-{\color{black}Revised.}
-\newline
-
-- section 3.2; "overlapping part" is difficult to understand
-
-{\color{black}Revised.}
-\newline
-
-- section 3.2; no description of the spanning tree
-
-{\color{black}Revised, and with section 3.2 modified.}
-\newline
-
-- section 4 l.6; let \url{-->} Let
-
-{\color{black}Revised.}
-\newline
-
-- section 4 l.10; \url{e_j} should use bold font.
-
-{\color{black}Revised.}
-\newline
-
-- figure 1, 2, and 4; pedestrians are very small and difficult to see the motion groups
-
-{\color{black}Revised.}
-\newline
-
-{\color{black}
-
-To summarise, we should have proposed much clearer positioning of the research. The work aims at enhance the detecting ability of video-based methods by combining the common fate principle with hough-transform based methods. The work also intends to show its applicable potentials in surveillance scenarios, which is also important in ITS areas.
-
-Also, we should have given better preparation of the figures which show the motion grouping results. One reason, why we do not enlarge the figures is that, all images are under the same coordinate system. Currently, all such images are revised.
-}
 }
 \end{document}
