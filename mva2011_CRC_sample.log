@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.6.16)  27 SEP 2013 20:30
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.6.16)  8 OCT 2013 16:59
 entering extended mode
 **mva2011_CRC_sample.tex
 (F:\houghRevise\mva2011_CRC_sample.tex
@@ -421,7 +421,7 @@ File: selectVimg00056_9.jpg Graphic file (type eps)
  <selectVimg00056_9.jpg>
 File: selectedvotesimg00056.jpg Graphic file (type eps)
 
-<selectedvotesimg00056.jpg> [4]
+<selectedvotesimg00056.jpg> [4] [5]
 File: samples.jpg Graphic file (type eps)
  <samples.jpg>
 File: dst6.jpg Graphic file (type eps)
@@ -429,16 +429,20 @@ File: dst6.jpg Graphic file (type eps)
 File: dst3.jpg Graphic file (type eps)
  <dst3.jpg>
 File: dst5.jpg Graphic file (type eps)
- <dst5.jpg>
-File: dst2.jpg Graphic file (type eps)
 
-<dst2.jpg>
+<dst5.jpg>
+File: dst2.jpg Graphic file (type eps)
+ <dst2.jpg>
 File: dst4.jpg Graphic file (type eps)
  <dst4.jpg>
 File: dst1.jpg Graphic file (type eps)
- <dst1.jpg> [5]
+ <dst1.jpg>
+Underfull \hbox (badness 3815) in paragraph at lines 417--425
+[][]\OT1/cmr/bx/n/10 Implementation Set-tings |   []   |   []   |   []
+ []
+
 File: a16.jpg Graphic file (type eps)
- <a16.jpg>
+<a16.jpg>
 File: a26.jpg Graphic file (type eps)
  <a26.jpg>
 File: a71.jpg Graphic file (type eps)
@@ -446,18 +450,18 @@ File: a71.jpg Graphic file (type eps)
 File: a116.jpg Graphic file (type eps)
  <a116.jpg>
 File: prf.eps Graphic file (type eps)
-
-<prf.eps>
+ <prf.eps>
 File: cm2.eps Graphic file (type eps)
  <cm2.eps>
 File: cm1.eps Graphic file (type eps)
  <cm1.eps>
-Underfull \hbox (badness 1466) in paragraph at lines 445--446
+Underfull \hbox (badness 1466) in paragraph at lines 458--459
 [][]\OT1/cmr/m/n/10 The precision-recall curves are shown in Fig-
  []
 
+[6]
 File: 016.jpg Graphic file (type eps)
-<016.jpg>
+ <016.jpg>
 File: 026.jpg Graphic file (type eps)
  <026.jpg>
 File: 071.jpg Graphic file (type eps)
@@ -498,22 +502,34 @@ File: 3.jpg Graphic file (type eps)
 File: 2.jpg Graphic file (type eps)
  <2.jpg>
 File: 4.jpg Graphic file (type eps)
- <4.jpg> [6] [7]
+ <4.jpg>
 File: leo1.jpg Graphic file (type eps)
  <leo1.jpg>
 File: leo2.jpg Graphic file (type eps)
-
-<leo2.jpg>
+ <leo2.jpg>
 File: leo3.jpg Graphic file (type eps)
- <leo3.jpg>
+
+<leo3.jpg>
 File: ti1.jpg Graphic file (type eps)
- <ti1.jpg> (F:\houghRevise\mva2011_CRC_sample.bbl
+ <ti1.jpg>
+Underfull \vbox (badness 6625) has occurred while \output is active []
+
+
+(F:\houghRevise\mva2011_CRC_sample.bbl
 Overfull \hbox (3.5741pt too wide) in paragraph at lines 4--7
 \OT1/cmr/m/n/9 tec-t ar-bi-trary shapes.  \OT1/cmr/m/it/9 Pat-tern Recog-ni-tio
 n\OT1/cmr/m/n/9 , 13(2):111--
  []
 
 
+Underfull \vbox (badness 5175) has occurred while \output is active []
+
+
+
+Package balance Warning: You have called \balance in second column
+(balance)                Columns might not be balanced.
+
+[7]
 Overfull \hbox (2.41405pt too wide) in paragraph at lines 14--17
 \OT1/cmr/m/n/9 de-tec-tion of in-de-pen-den-t mo-tion in crowd-s.  In \OT1/cmr/
 m/it/9 CVPR\OT1/cmr/m/n/9 ,
@@ -530,34 +546,35 @@ Overfull \hbox (1.37187pt too wide) in paragraph at lines 34--37
 [][]\OT1/cmr/m/n/9 J. Gal-l and V. Lem-pit-sky.  Class-specific hough forest-
  []
 
-
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
 [8])
 File: wzp.jpg Graphic file (type eps)
  <wzp.jpg>
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 559.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 572.
 
-Underfull \hbox (badness 2772) in paragraph at lines 559--561
+Underfull \hbox (badness 2772) in paragraph at lines 572--574
 \OT1/cmr/m/n/10 He re-ceived his M.S. de-gree in
  []
 
 File: cjs.jpg Graphic file (type eps)
 <cjs.jpg>
-Underfull \hbox (badness 1527) in paragraph at lines 563--571
+Underfull \hbox (badness 1527) in paragraph at lines 576--584
 \OT1/cmr/m/n/10 put-er Sci-ence, Peking U-ni-ver-si-ty,
  []
 
 File: zhb.jpg Graphic file (type eps)
 <zhb.jpg>
-Underfull \hbox (badness 1072) in paragraph at lines 574--593
+Underfull \hbox (badness 1072) in paragraph at lines 587--606
 \OT1/cmr/m/n/10 Hefei U-ni-ver-si-ty of Tech- nol-o-gy,
  []
 
+
+Overfull \vbox (1.4983pt too high) has occurred while \output is active []
+
+
+[9]
 File: mk.jpg Graphic file (type eps)
-<mk.jpg>
+ <mk.jpg>
 File: os.jpg Graphic file (type eps)
  <os.jpg>
 File: ki.jpg Graphic file (type eps)
@@ -579,30 +596,49 @@ Missing character: There is no ¡ in font cmr10!
 Missing character: There is no ¡ in font cmr10!
 Missing character: There is no ¡ in font cmr10!
 
-Underfull \hbox (badness 3942) in paragraph at lines 620--621
+Underfull \hbox (badness 3942) in paragraph at lines 633--634
 [][]\OT1/cmr/m/n/10 He has served (or will serve) as the pro-
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 620--621
+Underfull \hbox (badness 3965) in paragraph at lines 633--634
 \OT1/cmr/m/n/10 fer-ences, in-clud-ing 1995 IEEE-IROS (Gen-er-al),
  []
 
-
-Overfull \vbox (0.86746pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (49.00008pt too high) has occurred while \output is active []
-
-
-[9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 627--629
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 640--642
 
  []
 
 
-Overfull \vbox (1.94444pt too high) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 645--647
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 650--652
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--657
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--662
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--667
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--672
+
+ []
 
 [11] (F:\houghRevise\mva2011_CRC_sample.aux)
 
@@ -612,10 +648,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4276 strings out of 495355
  56379 string characters out of 3183882
- 138811 words of memory out of 3000000
+ 141811 words of memory out of 3000000
  7311 multiletter control sequences out of 15000+200000
  17709 words of font info for 63 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,22n,40p,1353b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,22n,40p,1544b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on mva2011_CRC_sample.dvi (11 pages, 79896 bytes).
+Output written on mva2011_CRC_sample.dvi (11 pages, 85924 bytes).
