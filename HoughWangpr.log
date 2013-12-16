@@ -1,0 +1,1174 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.16)  21 OCT 2013 16:53
+entering extended mode
+**HoughWangpr.tex
+(F:\houghRevise\HoughWangpr.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(F:\houghRevise\mva2011.cls
+Document Class: mva2011 2010/10/13 v1.0 MVA2011 LaTeX class file
+(C:\CTEX\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(C:\CTEX\MiKTeX\tex\latex\base\size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (F:\houghRevise\balance.sty
+Package: balance 1999/02/23 4.3 (PWD)
+\oldvsize=\dimen103
+)
+MVA Style File
+(C:\CTEX\MiKTeX\tex\latex\caption\caption.sty
+Package: caption 2011/11/10 v3.2e Customizing captions (AR)
+
+(C:\CTEX\MiKTeX\tex\latex\caption\caption3.sty
+Package: caption3 2011/11/01 v1.4a caption3 kernel (AR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\captionmargin=\dimen104
+\captionmargin@=\dimen105
+\captionwidth=\dimen106
+\caption@indent=\dimen107
+\caption@parindent=\dimen108
+\caption@hangindent=\dimen109
+)
+\c@ContinuedFloat=\count87
+)
+\@ctmp=\skip43
+\@figindent=\skip44
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(C:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(C:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen110
+\Gin@req@width=\dimen111
+)
+(C:\CTEX\MiKTeX\tex\latex\psnfss\times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen112
+\epsfysize=\dimen113
+)
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen114
+))
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen115
+)
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen116
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks16
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks17
+\eqnshift@=\dimen117
+\alignsep@=\dimen118
+\tagshift@=\dimen119
+\tagwidth@=\dimen120
+\totwidth@=\dimen121
+\lineht@=\dimen122
+\@envbody=\toks18
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(C:\CTEX\MiKTeX\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip48
+\subfigcapskip=\skip49
+\subfigcaptopadj=\dimen123
+\subfigbottomskip=\skip50
+\subfigcapmargin=\dimen124
+\subfiglabelskip=\skip51
+\c@subfigure=\count101
+\c@lofdepth=\count102
+\c@subtable=\count103
+\c@lotdepth=\count104
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(C:\CTEX\MiKTeX\tex\latex\subfigure\subfigure.cfg)
+\subfig@top=\skip52
+\subfig@bottom=\skip53
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(C:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(C:\CTEX\MiKTeX\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(C:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(C:\CTEX\MiKTeX\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(C:\CTEX\MiKTeX\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count105
+\float@exts=\toks20
+\float@box=\box28
+\@float@everytoks=\toks21
+\@floatcapt=\box29
+)
+(C:\CTEX\MiKTeX\tex\latex\base\ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks22
+\c@algorithm=\count106
+)
+(C:\CTEX\MiKTeX\tex\latex\algorithms\algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count107
+\c@ALC@line=\count108
+\c@ALC@rem=\count109
+\c@ALC@depth=\count110
+\ALC@tlm=\skip54
+\algorithmicindent=\skip55
+)
+(C:\CTEX\MiKTeX\tex\latex\preprint\authblk.sty
+Package: authblk 2009/11/18 1.3 (PWD)
+\affilsep=\skip56
+\@affilsep=\skip57
+\c@Maxaffil=\count111
+\c@authors=\count112
+\c@affil=\count113
+)
+(C:\CTEX\MiKTeX\tex\latex\abstract\abstract.sty
+Package: abstract 2009/06/08 v1.2a configurable abstracts
+\abstitleskip=\skip58
+\absleftindent=\skip59
+\absrightindent=\skip60
+\absparindent=\skip61
+\absparsep=\skip62
+)
+(C:\CTEX\MiKTeX\tex\latex\comment\comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment')
+(C:\CTEX\MiKTeX\tex\latex\picins\picins.sty
+Option `picins' Version 3.0 Sep. 1992, TH Darmstadt/HRZ
+\@BILD=\box30
+\@TEXT=\box31
+\d@breite=\dimen125
+\d@hoehe=\dimen126
+\d@xoff=\dimen127
+\d@yoff=\dimen128
+\d@shad=\dimen129
+\d@dash=\dimen130
+\d@boxl=\dimen131
+\d@pichskip=\dimen132
+\d@tmp=\dimen133
+\d@tmpa=\dimen134
+\d@bskip=\dimen135
+\hsiz@=\dimen136
+\p@getot@l=\dimen137
+\c@breite=\count114
+\c@hoehe=\count115
+\c@xoff=\count116
+\c@yoff=\count117
+\c@pos=\count118
+\c@shad=\count119
+\c@dash=\count120
+\c@boxl=\count121
+\c@zeilen=\count122
+\@changemode=\count123
+\c@piccaption=\count124
+\c@piccaptionpos=\count125
+\c@picpos=\count126
+\c@whole=\count127
+\c@half=\count128
+\c@tmp=\count129
+\c@tmpa=\count130
+\c@tmpb=\count131
+\c@tmpc=\count132
+\c@tmpd=\count133
+\d@leftskip=\skip63
+\ptoti=\dimen138
+\ptotii=\dimen139
+\env@box=\box32
+\d@envdp=\dimen140
+\c@hsize=\count134
+\c@envdp=\count135
+\d@envb=\dimen141
+)
+(C:\CTEX\MiKTeX\tex\latex\ulem\ulem.sty
+\UL@box=\box33
+\UL@hyphenbox=\box34
+\UL@skip=\skip64
+\UL@hook=\toks23
+\UL@height=\dimen142
+\UL@pe=\count136
+\UL@pixel=\dimen143
+\ULC@box=\box35
+Package: ulem 2011/03/18
+\ULdepth=\dimen144
+)
+(C:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\grfext.sty
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+))
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\kvsetkeys.sty
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\pdftexcmds.sty
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
+(C:\CTEX\MiKTeX\tex\latex\placeins\placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(F:\houghRevise\HoughWangpr.aux
+
+LaTeX Warning: Label `fig:compa:a' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:compa:a' multiply defined.
+
+
+LaTeX Warning: Label `fig:compa:b' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:compa:b' multiply defined.
+
+
+LaTeX Warning: Label `fig:compa:c' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:compa:c' multiply defined.
+
+
+LaTeX Warning: Label `fig:compa:c' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:compa:c' multiply defined.
+
+
+LaTeX Warning: Label `fig:compa' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: picins package is loaded.
+Package caption Info: subfigure package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count137
+\scratchdimen=\dimen145
+\scratchbox=\box36
+\nofMPsegments=\count138
+\nofMParguments=\count139
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count140
+\MPscratchDim=\dimen146
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
+\everyMPtoPDFconversion=\toks25
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 61.
+ (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 61.
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 61.
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 61.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+
+ []
+
+
+Underfull \vbox (badness 2529) has occurred while \output is active []
+
+ [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+
+
+]
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 110.
+
+<PEssR.jpg, id=11, 602.25pt x 481.8pt>
+File: PEssR.jpg Graphic file (type jpg)
+ <use PEssR.jpg>
+Package pdftex.def Info: PEssR.jpg used on input line 110.
+(pdftex.def)             Requested size: 106.4139pt x 85.12515pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 113.
+
+<a56.jpg, id=12, 722.7pt x 578.16pt>
+File: a56.jpg Graphic file (type jpg)
+ <use a56.jpg>
+Package pdftex.def Info: a56.jpg used on input line 113.
+(pdftex.def)             Requested size: 106.4139pt x 85.12367pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 116.
+
+<Untitled-6.jpg, id=13, 602.25pt x 481.8pt>
+File: Untitled-6.jpg Graphic file (type jpg)
+ <use Untitled-6.jpg>
+Package pdftex.def Info: Untitled-6.jpg used on input line 116.
+(pdftex.def)             Requested size: 106.4139pt x 85.12515pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 120.
+
+<Untitled-4.jpg, id=14, 602.25pt x 481.8pt>
+File: Untitled-4.jpg Graphic file (type jpg)
+ <use Untitled-4.jpg>
+Package pdftex.def Info: Untitled-4.jpg used on input line 120.
+(pdftex.def)             Requested size: 106.4139pt x 85.12515pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 129.
+
+
+(C:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 129.
+ [2 <F:/houghRevise/PEssR.jpg> <F:/houghRevise/a56.jpg> <F:/houghRevise/Untitle
+d-6.jpg> <F:/houghRevise/Untitled-4.jpg>]
+Overfull \hbox (17.67914pt too wide) detected at line 166
+\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 ; \OM
+L/cmm/m/it/10 V\OT1/cmr/m/n/10 ) = []  \OML/cmm/m/it/10 :
+ []
+
+[3]
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 250.
+
+File: a56.jpg Graphic file (type jpg)
+<use a56.jpg>
+Package pdftex.def Info: a56.jpg used on input line 250.
+(pdftex.def)             Requested size: 106.4139pt x 85.12367pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 253.
+
+<voteimg00056.jpg, id=32, 722.7pt x 578.16pt>
+File: voteimg00056.jpg Graphic file (type jpg)
+ <use voteimg00056.jpg>
+Package pdftex.def Info: voteimg00056.jpg used on input line 253.
+(pdftex.def)             Requested size: 106.4139pt x 85.12367pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 256.
+
+<selectVimg00056_9.jpg, id=33, 722.7pt x 578.16pt>
+File: selectVimg00056_9.jpg Graphic file (type jpg)
+ <use selectVimg00056_9.jpg>
+Package pdftex.def Info: selectVimg00056_9.jpg used on input line 256.
+(pdftex.def)             Requested size: 106.4139pt x 85.12367pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 259.
+
+<selectedvotesimg00056.jpg, id=34, 722.7pt x 578.16pt>
+File: selectedvotesimg00056.jpg Graphic file (type jpg)
+
+<use selectedvotesimg00056.jpg>
+Package pdftex.def Info: selectedvotesimg00056.jpg used on input line 259.
+(pdftex.def)             Requested size: 106.4139pt x 85.12367pt.
+ [4 <F:/houghRevise/voteimg00056.jpg> <F:/houghRevise/selectVimg00056_9.jpg> <F
+:/houghRevise/selectedvotesimg00056.jpg>]
+[5]
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 399.
+
+<samples.jpg, id=44, 165.61874pt x 125.46875pt>
+File: samples.jpg Graphic file (type jpg)
+ <use samples.jpg>
+Package pdftex.def Info: samples.jpg used on input line 399.
+(pdftex.def)             Requested size: 96.73788pt x 73.28519pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 412.
+
+<dst6.jpg, id=45, 149.55875pt x 149.55875pt>
+File: dst6.jpg Graphic file (type jpg)
+ <use dst6.jpg>
+Package pdftex.def Info: dst6.jpg used on input line 412.
+(pdftex.def)             Requested size: 29.02165pt x 29.02127pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 412.
+
+<dst3.jpg, id=46, 149.55875pt x 149.55875pt>
+File: dst3.jpg Graphic file (type jpg)
+ <use dst3.jpg>
+Package pdftex.def Info: dst3.jpg used on input line 412.
+(pdftex.def)             Requested size: 29.02165pt x 29.02127pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 412.
+
+<dst5.jpg, id=47, 149.55875pt x 149.55875pt>
+File: dst5.jpg Graphic file (type jpg)
+ <use dst5.jpg>
+Package pdftex.def Info: dst5.jpg used on input line 412.
+(pdftex.def)             Requested size: 29.02165pt x 29.02127pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 412.
+
+<dst2.jpg, id=48, 149.55875pt x 149.55875pt>
+File: dst2.jpg Graphic file (type jpg)
+ <use dst2.jpg>
+Package pdftex.def Info: dst2.jpg used on input line 412.
+(pdftex.def)             Requested size: 29.02165pt x 29.02127pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 412.
+
+<dst4.jpg, id=49, 149.55875pt x 149.55875pt>
+File: dst4.jpg Graphic file (type jpg)
+ <use dst4.jpg>
+Package pdftex.def Info: dst4.jpg used on input line 412.
+(pdftex.def)             Requested size: 29.02165pt x 29.02127pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 412.
+
+<dst1.jpg, id=50, 149.55875pt x 149.55875pt>
+File: dst1.jpg Graphic file (type jpg)
+ <use dst1.jpg>
+Package pdftex.def Info: dst1.jpg used on input line 412.
+(pdftex.def)             Requested size: 29.02165pt x 29.02127pt.
+
+Underfull \hbox (badness 3815) in paragraph at lines 419--427
+[]\OT1/cmr/bx/n/10 Implementation Set-tings |   []   |   []   |   []
+ []
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 430.
+
+<a16.jpg, id=51, 722.7pt x 578.16pt>
+File: a16.jpg Graphic file (type jpg)
+ <use a16.jpg>
+Package pdftex.def Info: a16.jpg used on input line 430.
+(pdftex.def)             Requested size: 111.2482pt x 88.99654pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 431.
+
+<a26.jpg, id=52, 722.7pt x 578.16pt>
+File: a26.jpg Graphic file (type jpg)
+ <use a26.jpg>
+Package pdftex.def Info: a26.jpg used on input line 431.
+(pdftex.def)             Requested size: 111.2482pt x 88.99654pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 432.
+
+<a71.jpg, id=53, 722.7pt x 578.16pt>
+File: a71.jpg Graphic file (type jpg)
+ <use a71.jpg>
+Package pdftex.def Info: a71.jpg used on input line 432.
+(pdftex.def)             Requested size: 111.2482pt x 88.99654pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 433.
+
+<a116.jpg, id=54, 722.7pt x 578.16pt>
+File: a116.jpg Graphic file (type jpg)
+ <use a116.jpg>
+Package pdftex.def Info: a116.jpg used on input line 433.
+(pdftex.def)             Requested size: 111.2482pt x 88.99654pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 449.
+
+Package epstopdf Info: Source file: <prf.eps>
+(epstopdf)                    date: 2013-05-16 22:22:29
+(epstopdf)                    size: 853778 bytes
+(epstopdf)             Output file: <prf-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-21 16:44:29
+(epstopdf)                    size: 21592 bytes
+(epstopdf)             Command: <epstopdf --outfile=prf-eps-converted-to.pdf pr
+f.eps>
+(epstopdf)             \includegraphics on input line 449.
+Package epstopdf Info: Output file is already uptodate.
+<prf-eps-converted-to.pdf, id=55, 466.74374pt x 416.55624pt>
+File: prf-eps-converted-to.pdf Graphic file (type pdf)
+
+<use prf-eps-converted-to.pdf>
+Package pdftex.def Info: prf-eps-converted-to.pdf used on input line 449.
+(pdftex.def)             Requested size: 106.4139pt x 94.21565pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 455.
+
+Package epstopdf Info: Source file: <cm2.eps>
+(epstopdf)                    date: 2013-05-16 22:22:29
+(epstopdf)                    size: 507470 bytes
+(epstopdf)             Output file: <cm2-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-21 16:44:33
+(epstopdf)                    size: 19220 bytes
+(epstopdf)             Command: <epstopdf --outfile=cm2-eps-converted-to.pdf cm
+2.eps>
+(epstopdf)             \includegraphics on input line 455.
+Package epstopdf Info: Output file is already uptodate.
+<cm2-eps-converted-to.pdf, id=56, 226.8475pt x 112.42pt>
+File: cm2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use cm2-eps-converted-to.pdf>
+Package pdftex.def Info: cm2-eps-converted-to.pdf used on input line 455.
+(pdftex.def)             Requested size: 106.4139pt x 53.20659pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 455.
+
+Package epstopdf Info: Source file: <cm1.eps>
+(epstopdf)                    date: 2013-05-16 22:22:29
+(epstopdf)                    size: 500642 bytes
+(epstopdf)             Output file: <cm1-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-21 16:44:35
+(epstopdf)                    size: 19478 bytes
+(epstopdf)             Command: <epstopdf --outfile=cm1-eps-converted-to.pdf cm
+1.eps>
+(epstopdf)             \includegraphics on input line 455.
+Package epstopdf Info: Output file is already uptodate.
+<cm1-eps-converted-to.pdf, id=57, 226.8475pt x 112.42pt>
+File: cm1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use cm1-eps-converted-to.pdf>
+Package pdftex.def Info: cm1-eps-converted-to.pdf used on input line 455.
+(pdftex.def)             Requested size: 106.4139pt x 53.20659pt.
+
+Underfull \hbox (badness 1466) in paragraph at lines 460--461
+[]\OT1/cmr/m/n/10 The precision-recall curves are shown in Fig-
+ []
+
+[6 <F:/houghRevise/samples.jpg> <F:/houghRevise/dst6.jpg> <F:/houghRevise/dst3.
+jpg> <F:/houghRevise/dst5.jpg> <F:/houghRevise/dst2.jpg> <F:/houghRevise/dst4.j
+pg> <F:/houghRevise/dst1.jpg> <F:/houghRevise/a16.jpg> <F:/houghRevise/a26.jpg>
+ <F:/houghRevise/a71.jpg> <F:/houghRevise/a116.jpg>]
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 466.
+
+<016.jpg, id=62, 722.7pt x 578.16pt>
+File: 016.jpg Graphic file (type jpg)
+ <use 016.jpg>
+Package pdftex.def Info: 016.jpg used on input line 466.
+(pdftex.def)             Requested size: 111.2482pt x 88.99654pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 467.
+
+<026.jpg, id=63, 722.7pt x 578.16pt>
+File: 026.jpg Graphic file (type jpg)
+ <use 026.jpg>
+Package pdftex.def Info: 026.jpg used on input line 467.
+(pdftex.def)             Requested size: 111.2482pt x 88.99654pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 468.
+
+<071.jpg, id=64, 722.7pt x 578.16pt>
+File: 071.jpg Graphic file (type jpg)
+ <use 071.jpg>
+Package pdftex.def Info: 071.jpg used on input line 468.
+(pdftex.def)             Requested size: 111.2482pt x 88.99654pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 469.
+
+<116.jpg, id=65, 722.7pt x 578.16pt>
+File: 116.jpg Graphic file (type jpg)
+ <use 116.jpg>
+Package pdftex.def Info: 116.jpg used on input line 469.
+(pdftex.def)             Requested size: 111.2482pt x 88.99654pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 470.
+
+<166.jpg, id=66, 722.7pt x 578.16pt>
+File: 166.jpg Graphic file (type jpg)
+ <use 166.jpg>
+Package pdftex.def Info: 166.jpg used on input line 470.
+(pdftex.def)             Requested size: 111.2482pt x 88.99654pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 471.
+
+<251.jpg, id=67, 722.7pt x 578.16pt>
+File: 251.jpg Graphic file (type jpg)
+ <use 251.jpg>
+Package pdftex.def Info: 251.jpg used on input line 471.
+(pdftex.def)             Requested size: 111.2482pt x 88.99654pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 472.
+
+<326.jpg, id=68, 722.7pt x 578.16pt>
+File: 326.jpg Graphic file (type jpg)
+ <use 326.jpg>
+Package pdftex.def Info: 326.jpg used on input line 472.
+(pdftex.def)             Requested size: 111.2482pt x 88.99654pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 473.
+
+<366.jpg, id=69, 722.7pt x 578.16pt>
+File: 366.jpg Graphic file (type jpg)
+ <use 366.jpg>
+Package pdftex.def Info: 366.jpg used on input line 473.
+(pdftex.def)             Requested size: 111.2482pt x 88.99654pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 484.
+
+<amotionimg00296.jpg, id=70, 642.4pt x 481.8pt>
+File: amotionimg00296.jpg Graphic file (type jpg)
+ <use amotionimg00296.jpg>
+Package pdftex.def Info: amotionimg00296.jpg used on input line 484.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 485.
+
+<amotionimg01836.jpg, id=71, 642.4pt x 481.8pt>
+File: amotionimg01836.jpg Graphic file (type jpg)
+ <use amotionimg01836.jpg>
+Package pdftex.def Info: amotionimg01836.jpg used on input line 485.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 487.
+
+<selectVimg00296_0.jpg, id=72, 642.4pt x 481.8pt>
+File: selectVimg00296_0.jpg Graphic file (type jpg)
+ <use selectVimg00296_0.jpg>
+Package pdftex.def Info: selectVimg00296_0.jpg used on input line 487.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 488.
+
+<selectVimg01836_0.jpg, id=73, 642.4pt x 481.8pt>
+File: selectVimg01836_0.jpg Graphic file (type jpg)
+ <use selectVimg01836_0.jpg>
+Package pdftex.def Info: selectVimg01836_0.jpg used on input line 488.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 490.
+
+<selectVimg00296_19.jpg, id=74, 642.4pt x 481.8pt>
+File: selectVimg00296_19.jpg Graphic file (type jpg)
+
+<use selectVimg00296_19.jpg>
+Package pdftex.def Info: selectVimg00296_19.jpg used on input line 490.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 491.
+
+<selectVimg01836_19.jpg, id=75, 642.4pt x 481.8pt>
+File: selectVimg01836_19.jpg Graphic file (type jpg)
+
+<use selectVimg01836_19.jpg>
+Package pdftex.def Info: selectVimg01836_19.jpg used on input line 491.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 501.
+
+<PER1.jpg, id=76, 642.4pt x 481.8pt>
+File: PER1.jpg Graphic file (type jpg)
+ <use PER1.jpg>
+Package pdftex.def Info: PER1.jpg used on input line 501.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 502.
+
+<PER2.jpg, id=77, 642.4pt x 481.8pt>
+File: PER2.jpg Graphic file (type jpg)
+ <use PER2.jpg>
+Package pdftex.def Info: PER2.jpg used on input line 502.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 504.
+
+<1.jpg, id=78, 642.4pt x 481.8pt>
+File: 1.jpg Graphic file (type jpg)
+ <use 1.jpg>
+Package pdftex.def Info: 1.jpg used on input line 504.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 505.
+
+<3.jpg, id=79, 642.4pt x 481.8pt>
+File: 3.jpg Graphic file (type jpg)
+ <use 3.jpg>
+Package pdftex.def Info: 3.jpg used on input line 505.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 507.
+
+<2.jpg, id=80, 642.4pt x 481.8pt>
+File: 2.jpg Graphic file (type jpg)
+ <use 2.jpg>
+Package pdftex.def Info: 2.jpg used on input line 507.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 508.
+
+<4.jpg, id=81, 642.4pt x 481.8pt>
+File: 4.jpg Graphic file (type jpg)
+ <use 4.jpg>
+Package pdftex.def Info: 4.jpg used on input line 508.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 525.
+
+<leo1.jpg, id=82, 642.4pt x 481.8pt>
+File: leo1.jpg Graphic file (type jpg)
+ <use leo1.jpg>
+Package pdftex.def Info: leo1.jpg used on input line 525.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 526.
+
+<leo2.jpg, id=83, 642.4pt x 481.8pt>
+File: leo2.jpg Graphic file (type jpg)
+ <use leo2.jpg>
+Package pdftex.def Info: leo2.jpg used on input line 526.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 528.
+
+<leo3.jpg, id=84, 642.4pt x 481.8pt>
+File: leo3.jpg Graphic file (type jpg)
+ <use leo3.jpg>
+Package pdftex.def Info: leo3.jpg used on input line 528.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 529.
+
+<ti1.jpg, id=85, 642.4pt x 481.8pt>
+File: ti1.jpg Graphic file (type jpg)
+ <use ti1.jpg>
+Package pdftex.def Info: ti1.jpg used on input line 529.
+(pdftex.def)             Requested size: 111.2482pt x 83.43427pt.
+ [7 <F:/houghRevise/prf-eps-converted-to.pdf> <F:/houghRevise/cm2-eps-converted
+-to.pdf> <F:/houghRevise/cm1-eps-converted-to.pdf> <F:/houghRevise/amotionimg00
+296.jpg> <F:/houghRevise/amotionimg01836.jpg> <F:/houghRevise/selectVimg00296_0
+.jpg> <F:/houghRevise/selectVimg01836_0.jpg> <F:/houghRevise/selectVimg00296_19
+.jpg> <F:/houghRevise/selectVimg01836_19.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <F:/houghRevise/016.jpg> <F:/houghRevise/026.jpg> <F:/houghRevise/071.jpg> 
+<F:/houghRevise/116.jpg> <F:/houghRevise/166.jpg> <F:/houghRevise/251.jpg> <F:/
+houghRevise/326.jpg> <F:/houghRevise/366.jpg> <F:/houghRevise/PER1.jpg> <F:/hou
+ghRevise/PER2.jpg> <F:/houghRevise/1.jpg> <F:/houghRevise/3.jpg> <F:/houghRevis
+e/2.jpg> <F:/houghRevise/4.jpg> <F:/houghRevise/leo1.jpg> <F:/houghRevise/leo2.
+jpg> <F:/houghRevise/leo3.jpg> <F:/houghRevise/ti1.jpg>] (F:\houghRevise\HoughW
+angpr.bbl
+Overfull \hbox (3.5741pt too wide) in paragraph at lines 4--7
+\OT1/cmr/m/n/9 tec-t ar-bi-trary shapes.  \OT1/cmr/m/it/9 Pat-tern Recog-ni-tio
+n\OT1/cmr/m/n/9 , 13(2):111--
+ []
+
+
+Overfull \hbox (2.41405pt too wide) in paragraph at lines 14--17
+\OT1/cmr/m/n/9 de-tec-tion of in-de-pen-den-t mo-tion in crowd-s.  In \OT1/cmr/
+m/it/9 CVPR\OT1/cmr/m/n/9 ,
+ []
+
+
+Overfull \hbox (0.42668pt too wide) in paragraph at lines 24--27
+[]\OT1/cmr/m/n/9 P. Felzen-szwal-b and D. Hut-ten-locher.  Pic-to-ri-al struc-
+ []
+
+
+Overfull \hbox (1.37187pt too wide) in paragraph at lines 34--37
+[]\OT1/cmr/m/n/9 J. Gal-l and V. Lem-pit-sky.  Class-specific hough forest-
+ []
+
+)
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 575.
+
+<wzp.jpg, id=117, 602.25pt x 803.0pt>
+File: wzp.jpg Graphic file (type jpg)
+ <use wzp.jpg>
+Package pdftex.def Info: wzp.jpg used on input line 575.
+(pdftex.def)             Requested size: 62.88295pt x 83.83371pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 576.
+
+Underfull \hbox (badness 2772) in paragraph at lines 576--578
+\OT1/cmr/m/n/10 He re-ceived his M.S. de-gree in
+ []
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 579.
+
+<cjs.jpg, id=118, 733.74126pt x 978.65625pt>
+File: cjs.jpg Graphic file (type jpg)
+ <use cjs.jpg>
+Package pdftex.def Info: cjs.jpg used on input line 579.
+(pdftex.def)             Requested size: 62.88295pt x 83.86433pt.
+
+Underfull \hbox (badness 1527) in paragraph at lines 580--588
+\OT1/cmr/m/n/10 put-er Sci-ence, Peking U-ni-ver-si-ty,
+ []
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 590.
+
+<zhb.jpg, id=119, 150.5625pt x 200.75pt>
+File: zhb.jpg Graphic file (type jpg)
+ <use zhb.jpg>
+Package pdftex.def Info: zhb.jpg used on input line 590.
+(pdftex.def)             Requested size: 62.88295pt x 83.8429pt.
+
+Underfull \hbox (badness 1072) in paragraph at lines 591--610
+\OT1/cmr/m/n/10 Hefei U-ni-ver-si-ty of Tech- nol-o-gy,
+ []
+
+
+Overfull \vbox (4.92139pt too high) has occurred while \output is active []
+
+
+[9 <F:/houghRevise/wzp.jpg> <F:/houghRevise/cjs.jpg> <F:/houghRevise/zhb.jpg>]
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 613.
+
+<mk.jpg, id=125, 481.8pt x 642.4pt>
+File: mk.jpg Graphic file (type jpg)
+ <use mk.jpg>
+Package pdftex.def Info: mk.jpg used on input line 613.
+(pdftex.def)             Requested size: 62.88295pt x 83.83861pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 628.
+
+<os.jpg, id=126, 120.45pt x 160.6pt>
+File: os.jpg Graphic file (type jpg)
+ <use os.jpg>
+Package pdftex.def Info: os.jpg used on input line 628.
+(pdftex.def)             Requested size: 62.88295pt x 83.8435pt.
+
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 634.
+
+<ki.jpg, id=127, 355.3275pt x 473.77pt>
+File: ki.jpg Graphic file (type jpg)
+ <use ki.jpg>
+Package pdftex.def Info: ki.jpg used on input line 634.
+(pdftex.def)             Requested size: 62.88295pt x 83.84375pt.
+
+Underfull \hbox (badness 3942) in paragraph at lines 637--638
+[]\OT1/cmr/m/n/10 He has served (or will serve) as the pro-
+ []
+
+
+Overfull \vbox (1.87524pt too high) has occurred while \output is active []
+
+
+[10 <F:/houghRevise/mk.jpg> <F:/houghRevise/os.jpg> <F:/houghRevise/ki.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 644--646
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 649--651
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--656
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--661
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--666
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 669--671
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--676
+
+ []
+
+[11] (F:\houghRevise\HoughWangpr.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5227 strings out of 495354
+ 70754 string characters out of 3183859
+ 160673 words of memory out of 3000000
+ 8208 multiletter control sequences out of 15000+200000
+ 21543 words of font info for 66 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 43i,22n,40p,1537b,724s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmb10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx
+10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx5.pfb><C:/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmbx9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
+><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/CT
+EX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7
+.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/CTEX/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/C
+TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/CTEX/MiKT
+eX/fonts/type1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8
+a.pfb>
+Output written on HoughWangpr.pdf (11 pages, 7695113 bytes).
+PDF statistics:
+ 206 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
+
